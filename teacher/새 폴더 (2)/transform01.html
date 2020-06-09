@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform(트랜스폼-변형)</title>
+    <script src="prefixfree.min.js"></script>
+    <style>
+    .wrap { width:1280px; margin: 0 auto; border:1px solid #333; }
+    .box { width: 140px; height: 140px; margin: 50px; text-align:center; 
+    background:deepskyblue; line-height: 70px; border:1px solid deeppink;
+    transition:1s; }
+    #box_01:hover { -webkit-transform: translate(100px, 50px);
+    -moz-transform: translate(100px, 50px);
+    -o-transform: translate(100px, 50px);
+    -ms-transform: translate(100px, 50px);
+    transform: translate(100px, 50px);  /* -wmos-trf+탭  */    
+    }
+    #box_02:hover { transform: translate(-100px, -50px); }
+    /* transform:translate(x양,y양)  - 이동 */
+
+    #box_03:hover { transform:rotate(180deg); }
+    #box_04:hover { transform:rotate(-180deg); }
+    /* transform:rotate(각도deg)  - 회전 */
+
+    #box_05:hover { transform:scale(2); }
+    #box_06:hover { transform:scale(0.5); }
+    /* transform:scale(배율)  - 확대/축소 */
+
+
+    #box_07:hover { transform:skew(45deg); }
+    #box_08:hover { transform:skew(-45deg); }
+    /* transform:skew(각도deg)  - 기울이기 */
+
+    #box_09 { transform-origin:100% 100%; }
+    #box_09:hover { transform:rotate(360deg); 
+    transform-origin:100% 100%; }
+    #box_10 { transform-origin:0% 0%; }
+    #box_10:hover { transform:rotate(360deg); 
+    transform-origin:0% 0%; }
+
+    #box_11:hover { transform:translateX(100px);  }
+    /* translateX, translateY  */
+    #box_12:hover { transform:scaleX(2) scaleY(0.5); }
+    /* scaleX, scaleY  */
+    #box_13:hover { transform:skewX(30deg) skewY(-15deg); }
+    /* skewX, skewY  */
+    #box_14:hover { transform:scaleX(2) skewY(0.3turn) skewX(0.2turn) scaleY(1.3) translateX(150px) translateY(100px); }
+    #box_15:hover { transform: matrix(2, 0.3, 0.2, 1.3, 150, 100); }
+    /* matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY());  */
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box" id="box_01">박스01</div>
+        <div class="box" id="box_02">박스02</div>
+        <div class="box" id="box_03">박스03</div>
+        <div class="box" id="box_04">박스04</div>
+        <div class="box" id="box_05">박스05</div>
+        <div class="box" id="box_06">박스06</div>
+        <div class="box" id="box_07">박스07</div>
+        <div class="box" id="box_08">박스08</div>
+        <div class="box" id="box_09">박스09</div>
+        <div class="box" id="box_10">박스10</div>
+        <div class="box" id="box_11">박스11</div>
+        <div class="box" id="box_12">박스12</div>
+        <div class="box" id="box_13">박스13</div>
+        <div class="box" id="box_14">박스14</div>
+        <div class="box" id="box_15">박스15</div>
+    </div>
+</body>
+</html>

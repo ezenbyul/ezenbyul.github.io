@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="OO기업 브랜드">
+    <meta name="subject" content="우리 브랜드는 최상의 품질과 서비스로 보답하겠습니다.">
+    <meta name="author" content="Mr. kim">
+    <meta name="keywords" content="화장품, 브랜드, 쇼핑몰, 인터넷 쇼핑">
+    <meta property="og:title" content="OO기업 제품">
+    <meta property="og:description" content="우리 브랜드는 최상의 품질과 서비스로 보답하겠습니다.">
+    <meta property="og:image" content="이미지의URL의절대주소">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>OO기업 제품</title>
+    <!-- 16x16, 24x24, 32x32, 48x48, 64x64 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- 아이폰의 2.0 이상일 경우-->
+    <link rel="apple-touch-icon-precomposed" href="favicon-152.png">
+    <!-- IE를 사용하는 경우 -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="favicon-144.png">
+    <!-- 파이어폭스, 오페라(크롬 일부)의 경우 썸네일로 제공될때 -->
+    <link rel="icon" href="favicon-16.png" sizes="16x16">
+    <link rel="icon" href="favicon-32.png" sizes="32x32">
+    <link rel="icon" href="favicon-48.png" sizes="48x48">
+    <link rel="icon" href="favicon-64.png" sizes="64x64">
+    <link rel="icon" href="favicon-64.png" sizes="128x128">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR" rel="stylesheet">
+    <!-- 최적화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <!-- <link rel="stylesheet" href="./xeicon/xeicon.min.css"> -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub.css">
+    <style>
+    body, html { width: 100%; min-width:320px; padding: 0; }
+    .blank { clear:both; }
+    .page { clear:both; width:100%; margin: 10px auto; 
+    margin-top: 46px; }
+    .page_tit { text-align: center; }
+    .frm { clear:both; margin-top:30px; }
+    .frm fieldset, .frm .btn_fr { clear:both; border:0; outline:0; width:500px; margin:20px auto; }
+    .indata { display:block; width:400px; height: 40px; line-height: 40px; font-size:18px; margin: 20px auto; text-indent:14px; }
+    .frm .btn_fr { width: 410px; }
+    .fr_comment { clear:both; width: 410px; margin:0 auto; line-height: 50px;  border-top:2px solid #333;  }
+    .fr_comment a { color:#333; }
+    .btn_fr li { float:left; }
+    .fr_btn { display:block; width: 100px; text-align:center; height: 42px; line-height: 42px; background:#333; color:#fff; outline:0; border:0; border-radius:8px; cursor: pointer; margin: 18px; }
+    </style>
+    <!-- <script src="jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="common.js"></script>
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <section class="page" id="login">
+        <h2 class="page_tit">로그인</h2>
+        <form action="" id="frm1" name="login" class="frm">
+            <fieldset>
+                <input type="text" placeholder="아이디를 입력" id="id" name="id" class="indata" required autofocus>
+                <input type="password" placeholder="패스워드를 입력" id="pw" name="pw" class="indata" required>
+            </fieldset>
+            <ul class="btn_fr">
+                <li>
+                    <input type="submit" value="로그인" class="fr_btn">
+                </li>
+                <li>
+                    <input type="reset" value="취소" class="fr_btn">
+                </li>
+                <li>
+                    <a href="join.html" target="_blank" class="fr_btn">회원가입</a>
+                </li>
+            </ul>
+        </form>
+        <div class="fr_comment">
+            <p><a href="">아이디를 잊으셨습니까?</a></p>
+            <p><a href="">비밀번호를 잊으셨습니까?</a></p>
+        </div>
+    </section>
+</body>
+</html>

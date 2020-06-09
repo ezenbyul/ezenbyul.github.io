@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>컬랩시블/아코디언 구현</title>
+    <style>
+    * { margin: 0; padding: 0; }
+    body, html { width: 100%; }
+    ul { list-style: none; }
+    a { text-decoration: none; }
+
+    .wrap { clear:both; width: 960px; margin:20px auto; }
+    .collapse { clear:both; }
+    .collapsible { width: 200px; }
+    .collapsible li { line-height:36px; }
+    .collapsible li label { display:block; color:#333; font-size:24px;
+    cursor:pointer; }
+    .collapsible li a { display:block; color:navy; font-size:18px;
+    padding-left: 24px;  }
+    .sub { height: 0; overflow:hidden; transition:0.6s; }
+    #ck1:checked ~ .collapsible .sub.item1 { height: 120px; }
+    #ck2:checked ~ .collapsible .sub.item2 { height: 120px; }
+    #ck3:checked ~ .collapsible .sub.item3 { height: 120px; }
+    #ck4:checked ~ .collapsible .sub.item4 { height: 120px; }
+    .ck { display:none; }
+    .collapsible li label:after { content:"▼"; }
+    #ck1:checked ~ .collapsible li.menu1 label:after { content:"▲";}
+    #ck2:checked ~ .collapsible li.menu2 label:after { content:"▲";}
+    #ck3:checked ~ .collapsible li.menu3 label:after { content:"▲";}
+    #ck4:checked ~ .collapsible li.menu4 label:after { content:"▲";}
+
+    .accor { clear:both; }
+    .accordion { width: 200px; }
+    .accordion li { line-height:36px; }
+    .accordion li label {display:block; color:#333; font-size:24px; 
+    cursor:pointer; }
+    .accordion li a { display:block; color:navy; font-size:18px; 
+    padding-left: 20px; }
+    #ra1:checked ~ .accordion .sub.item1 { height: 120px; }
+    #ra2:checked ~ .accordion .sub.item2 { height: 120px; }
+    #ra3:checked ~ .accordion .sub.item3 { height: 120px; }
+    #ra4:checked ~ .accordion .sub.item4 { height: 120px; }
+    .ra { display:none; }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="collapse">
+            <input type="checkbox" id="ck1" class="ck">
+            <input type="checkbox" id="ck2" class="ck">
+            <input type="checkbox" id="ck3" class="ck">
+            <input type="checkbox" id="ck4" class="ck">
+            <ul class="collapsible">
+                <li class="menu1">
+                    <label for="ck1">메인1</label>
+                    <ul class="sub item1">
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                    </ul>
+                </li>
+                <li class="menu2">
+                    <label for="ck2">메인2</label>
+                    <ul class="sub item2">
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                    </ul>
+                </li>
+                <li class="menu3">
+                    <label for="ck3">메인3</label>
+                    <ul class="sub item3">
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                    </ul>
+                </li>
+                <li class="menu4">
+                    <label for="ck4">메인4</label>
+                    <ul class="sub item4">
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="accor">
+            <input type="radio" name="ra" class="ra" id="ra1">
+            <input type="radio" name="ra" class="ra" id="ra2">
+            <input type="radio" name="ra" class="ra" id="ra3">
+            <input type="radio" name="ra" class="ra" id="ra4">
+            <ul class="accordion">
+                <li class="menu1">
+                    <label for="ra1">메인1</label>
+                    <ul class="sub item1">
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                    </ul>
+                </li>
+                <li class="menu2">
+                    <label for="ra2">메인2</label>
+                    <ul class="sub item2">
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                    </ul>
+                </li>
+                <li class="menu3">
+                    <label for="ra3">메인3</label>
+                    <ul class="sub item3">
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                    </ul>
+                </li>
+                <li class="menu4">
+                    <label for="ra4">메인4</label>
+                    <ul class="sub item4">
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                        <li><a href="">메뉴명</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

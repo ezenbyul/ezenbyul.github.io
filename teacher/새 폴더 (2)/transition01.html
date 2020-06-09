@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+    .box { width:100px; height:50px; background:deeppink; 
+        transition-property:width, height, margin, background; transition-duration:2s, 5s, 1s, 8s; 
+        transition-delay: 0s, 2s, 3s, 0s;
+        margin-top:0px; }
+    .box:hover { width:400px; height: 100px; background:dodgerblue; 
+    margin-top: 100px; }
+    #box_06 { margin:100px auto; }
+    .box_fr .box2 { width: 200px; height: 60px; background:#333;  text-align:center; transition-duration:3s; margin-top: 20px; color:#fff;  }
+    .box_fr:hover .box2 { width: 1000px; }
+    #box_07 { transition-timing-function:linear; }
+    #box_08 { transition-timing-function:ease; }
+    #box_09 { transition-timing-function:ease-in; }
+    #box_10 { transition-timing-function:ease-out; }
+    #box_11 { transition-timing-function:ease-in-out; }
+    #box_12 { transition-timing-function:cubic-bezier(0,.99,1,-0.62); }
+    .box3 { width: 200px; height: 50px; background:deepskyblue; 
+        transition:width 3s, height 6s; transition-delay:1s; margin-top: 60px; }
+    .box3:hover { width: 1000px; height: 300px; }
+    </style>
+</head>
+<body>
+    <div class="box" id="box_01">BOX01</div>
+    <div class="box" id="box_02">BOX02</div>
+    <div class="box" id="box_03">BOX03</div>
+    <div class="box" id="box_04">BOX04</div>
+    <div class="box" id="box_05">BOX05</div>
+    <div class="box" id="box_06">BOX06</div>
+    <div class="box_fr">
+        <div class="box2" id="box_07">BOX07</div>
+        <div class="box2" id="box_08">BOX08</div>
+        <div class="box2" id="box_09">BOX09</div>
+        <div class="box2" id="box_10">BOX10</div>
+        <div class="box2" id="box_11">BOX11</div>
+        <div class="box2" id="box_12">BOX12</div>
+    </div>    
+    <div class="box3" id="box_13"></div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* 브레드크럼브 */ 
+.bread { clear:both; width:1280px; margin: 0 auto; }
+.bread li { float:left; }
+.bread li a, .bread li span { display:block; color:#333; padding-right: 18px; 
+line-height:32px; }
+.bread li a::after { content:">"; padding-left: 20px; } 
+
+/* 서브 배너  */
+.vs { clear:both; width: 100%; } 
+.vs .ban, .ban li { width: 100%; }
+.ban li img { display:block; width:100%; }

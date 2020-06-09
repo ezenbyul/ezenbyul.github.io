@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+/* font-family: 'Noto Sans KR', sans-serif; */
+/* 초기화 설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    min-width: 1280px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* 공통 스타일 */
+.wrap {
+    width: 100%;
+}
+
+.hd {
+    clear: both;
+    width: 100%;
+}
+
+.hd_top_wrap,
+.hd_bottom_wrap {
+    clear: both;
+    width: 100%;
+}
+
+.hd_top_wrap {
+    border-bottom: 1px solid #dcb;
+    height: 30px;
+}
+
+.hd_bottom_wrap {
+    height: 70px;
+    position: relative;
+    top: auto;
+    left: auto;
+    z-index: 999;
+    background: rgba(255, 255, 255, 1);
+    border-bottom: 0;
+}
+
+.hd_bottom_wrap.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 3px solid #ccc;
+}
+
+.tnb {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.tnb .left {
+    float: left;
+}
+
+.tnb .right {
+    float: right;
+}
+
+.tnb ul li {
+    float: left;
+}
+
+.tnb ul li a {
+    font-size: 13px;
+    color: #333;
+    display: block;
+    height: 30px;
+    line-height: 30px;
+}
+
+.tnb .left li a {
+    padding-right: 20px;
+    border-left: 1px solid #dcb;
+    padding-left: 20px;
+}
+
+.tnb .right li a {
+    padding-left: 20px;
+}
+
+.tnb .right li a span {
+    display: block;
+    float: left;
+}
+
+.count {
+    background-color: #222;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.hd_top_wrap .btn {
+    border-left: 1px solid #dcb;
+    margin-left: 20px;
+    padding-left: 10px;
+    border-right: 1px solid #dcb;
+    padding-right: 10px;
+}
+
+.tnb .right li.btn a {
+    padding-left: 0;
+}
+
+.gnb {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.menu {
+    width: 390px;
+    margin: 0 auto;
+}
+
+.menu li {
+    float: left;
+    padding: 12px;
+}
+
+.menu li a {
+    color: #222;
+    font-size: 16px;
+}
+
+.download {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    display: block;
+    width: 220px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #111;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.contents {
+    clear: both;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* 푸터 영역 스타일 */
+.ft {
+    clear: both;
+    width: 100%;
+}
+
+.ft_top_wrap {
+    width: 100%;
+    border-top: 5px solid #dcb;
+}
+
+.ft_wrap {
+    clear: both;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.ft_col {
+    clear: both;
+}
+
+.ft_col li {
+    float: left;
+    font-size: 12px;
+    text-align: center;
+}
+
+.ft_col li:first-child,
+.ft_col li:last-child {
+    width: 300px;
+}
+
+.ft_col li:nth-child(2) {
+    width: 680px;
+}
+
+.ft_col li .ft_tit {
+    font-size: 15px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.ft_col li span {
+    display: block;
+    line-height: 20px;
+}
+
+.ft_col li span.tel {
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.ft_col li span.strong,
+.ft_col li a {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #222;
+}
+
+.fnb {
+    clear: both;
+    width: 350px;
+    margin: 0 auto;
+}
+
+.fnb li {
+    padding: 6px;
+    float: left;
+}
+
+.fnb li a {
+    display: block;
+    padding: 8px;
+    background: #ccc;
+    color: #111;
+    font-size: 12px;
+}
+
+.copyright {
+    clear: both;
+    text-align: center;
+    line-height: 30px;
+    padding-bottom: 20px;
+}

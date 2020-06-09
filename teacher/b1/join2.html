@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="OO기업 브랜드">
+    <meta name="subject" content="우리 브랜드는 최상의 품질과 서비스로 보답하겠습니다.">
+    <meta name="author" content="Mr. kim">
+    <meta name="keywords" content="화장품, 브랜드, 쇼핑몰, 인터넷 쇼핑">
+    <meta property="og:title" content="OO기업 제품">
+    <meta property="og:description" content="우리 브랜드는 최상의 품질과 서비스로 보답하겠습니다.">
+    <meta property="og:image" content="이미지의URL의절대주소">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>OO기업 제품</title>
+    <!-- 16x16, 24x24, 32x32, 48x48, 64x64 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- 아이폰의 2.0 이상일 경우-->
+    <link rel="apple-touch-icon-precomposed" href="favicon-152.png">
+    <!-- IE를 사용하는 경우 -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="favicon-144.png">
+    <!-- 파이어폭스, 오페라(크롬 일부)의 경우 썸네일로 제공될때 -->
+    <link rel="icon" href="favicon-16.png" sizes="16x16">
+    <link rel="icon" href="favicon-32.png" sizes="32x32">
+    <link rel="icon" href="favicon-48.png" sizes="48x48">
+    <link rel="icon" href="favicon-64.png" sizes="64x64">
+    <link rel="icon" href="favicon-64.png" sizes="128x128">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR" rel="stylesheet">
+    <!-- 최적화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <!-- <link rel="stylesheet" href="./xeicon/xeicon.min.css"> -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub.css">
+    <style>
+    .blank { clear:both; }
+    .page { clear:both; width: 1280px; margin: 10px auto; 
+    margin-top: 46px; }
+    .page_tit { text-align: center; }
+    .boardBusiness { width: 990px; margin:10px auto; }
+    .join_info {    width: 628px;    margin: 20px 181px 30px 181px;
+    border-bottom: 1px solid #d8d8d8; }
+    .join_step { height:147px; border-bottom:3px solid #d8d8d8; }
+    .join_step ul {    overflow: hidden;    float: left;    width: 628px;    height: 147px; }
+    .join_step ul li {    float: left;    height: 147px; 
+    vertical-align:top; }
+    .join_step ul li span {    display: block;    height: 45px;
+    padding-top: 102px;    font-size: 14px;
+        background: url(./img/join_step.png) no-repeat; }
+    .join_step ul li .step1 {    width: 139px;    margin-right: 33px;
+    padding-left: 9px;    background-position: 0 0; }
+    .join_step ul li .step2 {    width: 143px;    margin-right: 24px;
+    padding-left: 5px;    background-position: -180px 0; }
+    .join_step ul li .step3 {    width: 157px;    margin-right: 18px;
+    background-position: -352px 0; }
+    .join_step ul li .step4 {    width: 100px;    background-position: -530px 0;    letter-spacing: -1px; }
+    .join_step ul li.on span {
+    background: url(./img/join_step_on.png) no-repeat;
+    font-weight: bold;    color: #ed1c24; }
+    .join_step ul li.on .step1 {    background-position: 0 0; }
+    .join_step ul li .step2 {    width: 143px;    margin-right: 24px;
+    padding-left: 5px;    background-position: -180px 0; }
+    .join_step ul li.on .step3 {    background-position: -352px 0; }
+    .box_type1 { margin-bottom:30px; padding-bottom: 20px; }
+    .frm { clear:both; margin-top:30px; }
+    .frm fieldset, .frm .btn_fr { clear:both; border:0; outline:0; width: 600px; margin:20px auto; }
+    .frm fieldset {  border-bottom:2px solid #333; 
+        border-top:2px solid #333; }
+    .indata { float:left; display:block; width:400px; height: 40px; line-height: 40px; font-size:18px; text-indent:14px; margin:20px; }
+    .indata2 { display:block; float:left; width:180px; height: 40px; 
+    line-height: 40px; font-size:18px; text-indent:14px; margin:20px; }
+    .mail_s { display:block; width: 40px; height: 40px; line-height: 40px; text-align:center; float:left; margin-top:20px;  }
+    #email3 { display:none; }
+    .indata > * { padding-right: 10px; margin-right: 10px; }
+    .frm .btn_fr { width: 410px; }
+    .fr_comment { clear:both; width: 410px; margin:0 auto; line-height: 50px;   }
+    .fr_comment a { color:#333; }
+
+    .btn_fr li { float:left; }
+    .fr_btn { display:block; width: 100px; text-align:center; height: 42px; line-height: 42px; background:#333; color:#fff; outline:0; border:0; border-radius:8px; cursor: pointer; margin: 18px; }
+    </style>
+    <!-- <script src="jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="common.js"></script>
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="hd_top_wrap">
+                <nav class="tnb">
+                    <ul class="left">
+                        <li><a href="tel:1899-5031">C/S CENTER : 1899-5031</a></li>
+                        <li><a href="index_en.html">LANGUAGE</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="login.html">LOGIN</a></li>
+                        <li><a href="cart.html">
+                            <span>CART</span>
+                            <span class="count">0</span></a>
+                        </li>
+                        <li><a href="mypage.html">MYPAGE</a></li>
+                        <li class="btn">
+                            <a href="#search">
+                                <i class="xi-search"></i> 
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hd_bottom_wrap">
+                <nav class="gnb">
+                    <a href="index.html" class="logo">
+                        <img src="https://placehold.it/110x50/333" alt="로고">
+                    </a>
+                    <ul class="menu">
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="review.html">REVIEW</a></li>
+                        <li><a href="magazine.html">MEGAZINE</a></li>
+                        <li><a href="event.html">EVENT</a></li>
+                    </ul>
+                    <a href="" class="download">
+                        3,000 KRW COUPON DOWNLOAD &nbsp;
+                        <img src="./img/download_icon.png" alt="다운로드 아이콘" width="14">
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <div class="bread">
+            <ul class="bc">
+                <li><a href="index.html"><i class="xi-home"></i></a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><span>회원가입</span></li>
+            </ul>
+        </div>
+        <figure class="vs">
+            <ul class="ban">
+                <li><img src="https://placehold.it/1640x280/39c" alt="서브비주얼배너"></li>
+            </ul>
+        </figure>
+        <div class="contents">
+            <section class="page" id="join">
+                <h2 class="page_tit">회원가입</h2>
+                <div class="boardBusiness">
+                    <!-- join_info -->
+                    <div class="join_info">
+                        <!-- join_step -->
+                        <div class="join_step">
+                            <ul>
+                                <li class="first"><span class="step1">1. 약관동의</span></li>
+                                <li><span class="step2">2. 본인인증</span></li>
+                                <li class="on"><span class="step3">3. 기본정보입력</span></li>
+                                <li><span class="step4">4. 회원가입 완료</span></li>
+                            </ul>
+                        </div>
+                        <!-- //join_step -->
+                        <p style="padding:40px;">
+                            상품구입 회원가입을 위해서는 회원가입이 필요합니다.
+                        </p>
+                    </div>
+                </div>
+                <form action="" id="frm1" name="join" class="frm">
+                    <fieldset>
+                        <input type="text" placeholder="아이디를 입력" id="id" name="id" class="indata" required autofocus>
+                        <input type="button" value="중복확인" class="fr_btn" style="float:left">
+                        <input type="password" placeholder="패스워드를 입력" id="pw" name="pw" class="indata" required>
+                        <input type="password" placeholder="패스워드확인을 입력" id="pw2" name="pw2" class="indata" required>
+                        <input type="text" placeholder="이름을 입력" id="name" name="name" class="indata" required>
+                        <div class="indata">
+                            <label for="">성별 : </label>
+                            <input type="radio" name="sex" id="male1" checked>
+                            <label for="male1">남</label>
+                            <input type="radio" name="sex" id="male2">
+                            <label for="male2">여</label>
+                        </div>
+                        <input type="text" placeholder="이메일주소입력" id="email" name="email" class="indata2">
+                        <span class="mail_s">@</span>
+                        <select name="email2" id="email2" class="indata2">
+                            <option value=""></option>
+                            <option value="none">직접입력</option>
+                            <option value="naver">naver.com</option>
+                            <option value="gmail">google.com</option>
+                            <option value="daum">daum.net</option>
+                        </select>
+                        <input type="text" name="email2" id="email3" placeholder="직접입력" class="indata2">
+                        <script>
+                            $(document).ready(function(){
+                                $("#email2").change(function(event){
+                                    if(this.value=="none"){
+                                        $("#email2").css("display","none");
+                                        $("#email3").css("display", "block");
+                                    } else {
+                                        $("#email2").css("display","block");
+                                        $("#email3").css("display", "none");
+                                    }
+                                });
+                            });
+                        </script>
+                        <input type="date" id="birth" name="birth" class="indata" placeholder="생년월일을 입력" title="생년월일을 입력">
+                        <input type="tel" id="tel" name="tel" class="indata" placeholder="전화번호입력" title="전화번호 입력">
+                    </fieldset>
+                    <ul class="btn_fr">
+                        <li>
+                            <input type="submit" value="회원가입" class="fr_btn">
+                        </li>
+                        <li>
+                            <input type="reset" value="취소" class="fr_btn">
+                        </li>
+                    </ul>
+                </form>
+                <div class="fr_comment">
+                    <p>회원 가입 후에 상품을 구매하실 수 있습니다.</p>
+                    <p>회원 가입을 하시면, 포인트가 쌓입니다.</p>
+                </div>
+            </section>
+        </div>
+        <footer class="ft">
+            <div class="ft_top_wrap">
+                <div class="ft_wrap">
+                    <ul class="ft_col">
+                        <li>
+                            <h4 class="ft_tit">C/S</h4>
+                            <p>
+                                <span class="ft_item tel">1899-5031</span>
+                                <span class="ft_item">MON-FRI AM 9:00 - PM 6:00</span>
+                                <span class="ft_item strong">CLOSED</span>
+                                <span class="ft_item">AM 12:00 - PM 1:00</span>
+                                <span class="ft_item">& WEEKEND & HOLIDAYS</span>
+                            </p>
+                        </li>
+                        <li>
+                            <h4 class="ft_tit">INFORMATION</h4>
+                            <p>
+                                <span class="ft_item">
+                                    상호 (주) 대웅제약  &nbsp; &nbsp; 대표이사 전승호 &nbsp;&nbsp; 사업자등록번호 124-86-01143
+                                </span>
+                                <span class="ft_item">통신판매업 신고 제2019-화성향남-0140호</span>
+                                <span class="ft_item">
+                                    전화 1899-5031 &nbsp; &nbsp;
+                                    주소 경기도 화성시 
+                                    향남읍 제약공단4길 35-14 대웅제약
+                                </span>
+                                <span class="ft_item">
+                                    개인정보관리책임자 <a href="mailto:mallcs@daewoong.co.kr">박영호 (mallcs@daewoong.co.kr)</a>
+                                </span>
+                                <span class="ft_item">&nbsp; </span>
+                            </p>
+                        </li>
+                        <li>
+                            <h4 class="ft_tit"></h4>
+                            <p class="ft_logo">
+                                <img src="https://placehold.it/200x52/ddd" alt="하단로고">
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft_bottom_wrap">
+                <div class="ft_wrap">
+                    <ul class="fnb">
+                        <li><a href="member.html#page1">이용약관</a></li>
+                        <li><a href="member.html#page2">개인정보취급방침</a></li>
+                        <li><a href="member.html#page3">이용안내</a></li>
+                        <li><a href="site_map.html">사이트맵</a></li>
+                    </ul>
+                    <p class="copyright">Copyrights 2020. kim. All rights reserved. </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

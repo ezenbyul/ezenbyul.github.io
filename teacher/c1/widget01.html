@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위젯연습</title>
+    <style>
+    * { margin: 0; padding: 0; }
+    body, html { width: 100%; }
+    ul { list-style: none; }
+    a { text-decoration: none; }
+
+    /* 첫 번째 2차 메뉴 - 일반메뉴 */
+    #gnb1 { width: 960px; margin: 20px auto; height: 38px; position:relative; }
+    #gnb1 li { float:left; width:192px; line-height: 36px; position:relative; }
+    #gnb1 li a { display:block; text-align:center; border-left:1px solid #333; border-right:1px solid #333; color:#333; 
+    background:#fff; }
+    #gnb1 li a.dpa1 { color:#333; background:#fff; font-weight:700; 
+     border-top:1px solid #333; border-bottom:1px solid #333; }
+    #gnb1 li:hover a.dpa1 { color:#fff; background:deeppink; }
+    #gnb1 li .sub li:last-child a { border-bottom:1px solid #333; }
+    #gnb1 li .sub { 
+        transition-duration:0.5s;  transition-delay:0.2s;
+        transition-timing-function:ease-in;
+        display:none; 
+        /* 스트레치효과전 height:0; */ 
+        overflow:hidden; 
+        /* 페이드인전 : visibility:hidden; opacity:0; */
+     position:absolute; left:0; top:36px; z-index:999; }
+    #gnb1 li.dp1:hover .sub { 
+        display:block; 
+        /* 스트레치효과후 height:220px; */
+        /* 페이드인후 : visibility:visible; opacity:1; */
+    }
+    #gnb1 li .sub li a:hover { color:#fff; background:#333; }
+
+    .page { clear:both; position:relative; }
+    .con { width: 960px; margin:20px auto; position:relative; height: 450px;  }
+    .con img { position:absolute; left: 0; top: 0; z-index:50; }
+
+    /* 두 번째 2차 내부 그룹 메뉴 - 사이트맵 또는 펼침메뉴 */
+    #gnb2 { width: 960px; margin:20px auto; height: 36px; 
+    position:relative; }
+    #gnb2 li { width:240px; float:left; line-height: 36px; }
+    #gnb2 li a { display:block; color:#333; }
+    #gnb2 li .sub { display:none; position:absolute; z-index:999; left: 0; top: 36px; }
+    #gnb2 li:hover .sub { display:block; }
+    #gnb2 > ul > li > a { text-align:center; } 
+    #gnb2 .sub dt { text-align: center; }
+    #gnb2 .sub a { padding-left: 16px; }
+    </style>
+</head>
+<body>
+    <h2>메뉴1</h2>
+    <div class="page" id="page1">
+        <nav id="gnb1">
+            <ul>
+                <li class="dp1">
+                    <a href="" class="dpa1">메인메뉴1</a>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴01</a></li>
+                        <li><a href="">서브메뉴02</a></li>
+                        <li><a href="">서브메뉴03</a></li>
+                        <li><a href="">서브메뉴04</a></li>
+                        <li><a href="">서브메뉴05</a></li>
+                        <li><a href="">서브메뉴06</a></li>
+                    </ul>
+                </li>
+                <li class="dp1">
+                    <a href="" class="dpa1">메인메뉴2</a>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴01</a></li>
+                        <li><a href="">서브메뉴02</a></li>
+                        <li><a href="">서브메뉴03</a></li>
+                        <li><a href="">서브메뉴04</a></li>
+                        <li><a href="">서브메뉴05</a></li>
+                        <li><a href="">서브메뉴06</a></li>
+                    </ul>
+                </li>
+                <li class="dp1">
+                    <a href="" class="dpa1">메인메뉴3</a>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴01</a></li>
+                        <li><a href="">서브메뉴02</a></li>
+                        <li><a href="">서브메뉴03</a></li>
+                        <li><a href="">서브메뉴04</a></li>
+                        <li><a href="">서브메뉴05</a></li>
+                        <li><a href="">서브메뉴06</a></li>
+                    </ul>
+                </li>
+                <li class="dp1">
+                    <a href="" class="dpa1">메인메뉴4</a>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴01</a></li>
+                        <li><a href="">서브메뉴02</a></li>
+                        <li><a href="">서브메뉴03</a></li>
+                        <li><a href="">서브메뉴04</a></li>
+                        <li><a href="">서브메뉴05</a></li>
+                        <li><a href="">서브메뉴06</a></li>
+                    </ul>
+                </li>
+                <li class="dp1">
+                    <a href="" class="dpa1">메인메뉴5</a>
+                    <ul class="sub">
+                        <li><a href="">서브메뉴01</a></li>
+                        <li><a href="">서브메뉴02</a></li>
+                        <li><a href="">서브메뉴03</a></li>
+                        <li><a href="">서브메뉴04</a></li>
+                        <li><a href="">서브메뉴05</a></li>
+                        <li><a href="">서브메뉴06</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main class="con">
+            <img src="https://placehold.it/960x400/2c8" alt="배너">
+        </main>
+    </div>
+    <h2>메뉴2</h2>
+    <div class="page" id="page2">
+        <nav id="gnb2">
+            <ul class="mainmenu">
+                <li>
+                    <a href="">대메뉴1</a>
+                    <ul class="sub">
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목11</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목12</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목13</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목14</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">대메뉴2</a>
+                    <ul class="sub">
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목21</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목22</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목23</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목24</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">대메뉴3</a>
+                    <ul class="sub">
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목31</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목32</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목33</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목34</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">대메뉴4</a>
+                    <ul class="sub">
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목41</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목42</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목43</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                        <li class="submenu">
+                            <dl class="cate">
+                                <dt class="cate_tit">그룹제목44</dt>
+                                <dd><a href="">소메뉴1</a></dd>
+                                <dd><a href="">소메뉴2</a></dd>
+                                <dd><a href="">소메뉴3</a></dd>
+                                <dd><a href="">소메뉴4</a></dd>
+                                <dd><a href="">소메뉴5</a></dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main class="con">
+            <img src="https://placehold.it/960x400/2c8" alt="배너">
+        </main>
+        <main class="con">
+            <img src="https://placehold.it/960x400/2c8" alt="배너">
+        </main>
+    </div>
+</body>
+</html>

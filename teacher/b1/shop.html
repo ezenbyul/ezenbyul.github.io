@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="title" content="OO기업 브랜드">
+    <meta name="subject" content="우리 브랜드는 최상의 품질과 서비스로 보답하겠습니다.">
+    <meta name="author" content="Mr. kim">
+    <meta name="keywords" content="화장품, 브랜드, 쇼핑몰, 인터넷 쇼핑">
+    <meta property="og:title" content="OO기업 제품">
+    <meta property="og:description" content="우리 브랜드는 최상의 품질과 서비스로 보답하겠습니다.">
+    <meta property="og:image" content="이미지의URL의절대주소">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>OO기업 제품</title>
+    <!-- 16x16, 24x24, 32x32, 48x48, 64x64 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- 아이폰의 2.0 이상일 경우-->
+    <link rel="apple-touch-icon-precomposed" href="favicon-152.png">
+    <!-- IE를 사용하는 경우 -->
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="favicon-144.png">
+    <!-- 파이어폭스, 오페라(크롬 일부)의 경우 썸네일로 제공될때 -->
+    <link rel="icon" href="favicon-16.png" sizes="16x16">
+    <link rel="icon" href="favicon-32.png" sizes="32x32">
+    <link rel="icon" href="favicon-48.png" sizes="48x48">
+    <link rel="icon" href="favicon-64.png" sizes="64x64">
+    <link rel="icon" href="favicon-64.png" sizes="128x128">
+    <link rel="stylesheet" href="reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR" rel="stylesheet">
+    <!-- 최적화 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <!-- <link rel="stylesheet" href="./xeicon/xeicon.min.css"> -->
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="sub.css">
+    <style>
+    .blank { clear:both; }
+
+    /* 상품 탭 */
+    .item_box { clear:both; }
+    .item_box li { float:left; margin-right: 160px; width: 320px;
+    height: 360px;  overflow:hidden;  }
+    .item_box ul li:nth-child(3n) { margin-right: 0; } 
+    .item_box li img { display:block; width: 320px; }
+    .item_box ul { float:left; display:none; }
+    .ra_item { display: none; }
+    #ra0:checked ~ .item_box ul { display:block;  }
+    #ra1:checked ~ .item_box .item1 { display:block; }
+    #ra2:checked ~ .item_box .item2 { display:block; }
+    #ra3:checked ~ .item_box .item3 { display:block; }
+    #ra4:checked ~ .item_box .item4 { display:block; }
+    #ra5:checked ~ .item_box .item5 { display:block; }
+    .lb_box { clear:both; }
+    .lb_box li { float:left; }
+    .lb_box li label { display:block; width: 90px; height: 36px; 
+    line-height: 36px; text-align:center; background:#999; 
+margin:12px 16px 12px 0px; cursor:pointer; color:black; }
+    #ra0:checked ~ .lb_box .bt0 { color:#fff; background:deeppink; }
+    #ra1:checked ~ .lb_box .bt1 { color:#fff; background:deeppink; }
+    #ra2:checked ~ .lb_box .bt2 { color:#fff; background:deeppink; }
+    #ra3:checked ~ .lb_box .bt3 { color:#fff; background:deeppink; }
+    #ra4:checked ~ .lb_box .bt4 { color:#fff; background:deeppink; }
+    #ra5:checked ~ .lb_box .bt5 { color:#fff; background:deeppink; }
+
+    /* 레이어 팝업  */
+    .it_pop { position:fixed; width: 100vw; height: 100vh; 
+    z-index:9999; left: 0; top: 0; background:rgba(48, 15, 15, 0.8); display:none; }
+    .it_pop:target { display:block; }
+    .item_pop { width:800px; height:600px; margin:50px auto; 
+    background:rgba(250,250,250,0.8); }
+    .pop_head { clear:both; width: 100%; height: 38px; line-height: 38px; background:#333; color:#fff; }
+    .pop_tit { float:left; padding-left:24px;}
+    .pop_close { display:block; float:right; color:#fff; width: 38px; height: 38px; text-align:center; }
+    .pop_item_box { clear:both; }
+    .pop_item_box img { display:block; width: 600px; margin: 20px auto; }
+    </style>
+    <!-- <script src="jquery-3.5.1.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.1.js"></script> -->
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="common.js"></script>
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="hd_top_wrap">
+                <nav class="tnb">
+                    <ul class="left">
+                        <li><a href="tel:1899-5031">C/S CENTER : 1899-5031</a></li>
+                        <li><a href="index_en.html">LANGUAGE</a></li>
+                    </ul>
+                    <ul class="right">
+                        <li><a href="login.html">LOGIN</a></li>
+                        <li><a href="cart.html">
+                            <span>CART</span>
+                            <span class="count">0</span></a>
+                        </li>
+                        <li><a href="mypage.html">MYPAGE</a></li>
+                        <li class="btn">
+                            <a href="#search">
+                                <i class="xi-search"></i> 
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="hd_bottom_wrap">
+                <nav class="gnb">
+                    <a href="index.html" class="logo">
+                        <img src="https://placehold.it/110x50/333" alt="로고">
+                    </a>
+                    <ul class="menu">
+                        <li><a href="shop.html">SHOP</a></li>
+                        <li><a href="review.html">REVIEW</a></li>
+                        <li><a href="magazine.html">MEGAZINE</a></li>
+                        <li><a href="event.html">EVENT</a></li>
+                    </ul>
+                    <a href="" class="download">
+                        3,000 KRW COUPON DOWNLOAD &nbsp;
+                        <img src="./img/download_icon.png" alt="다운로드 아이콘" width="14">
+                    </a>
+                </nav>
+            </div>
+        </header>
+        <div class="bread">
+            <ul class="bc">
+                <li><a href="index.html"><i class="xi-home"></i></a></li>
+                <li><span>SHOP</span></li>
+            </ul>
+        </div>
+        <figure class="vs">
+            <ul class="ban">
+                <li><img src="https://placehold.it/1640x280/123" alt="서브비주얼배너"></li>
+            </ul>
+        </figure>
+        <div class="contents">
+            <input type="radio" name="ra" id="ra0" class="ra_item" checked>
+            <input type="radio" name="ra" id="ra1" class="ra_item">
+            <input type="radio" name="ra" id="ra2" class="ra_item">
+            <input type="radio" name="ra" id="ra3" class="ra_item">
+            <input type="radio" name="ra" id="ra4" class="ra_item">
+            <input type="radio" name="ra" id="ra5" class="ra_item">
+            <div class="lb_box">
+                <ul class="btn_group">
+                    <li><label for="ra0" class="bt0">전체</label></li>
+                    <li><label for="ra1" class="bt1">항목1</label></li>
+                    <li><label for="ra2" class="bt2">항목2</label></li>
+                    <li><label for="ra3" class="bt3">항목3</label></li>
+                    <li><label for="ra4" class="bt4">항목4</label></li>
+                    <li><label for="ra5" class="bt5">항목5</label></li>
+                </ul>
+            </div>
+            <section class="item_box">
+                <ul class="item1">
+                    <li>
+                        <a href="#it1">
+                            <img src="https://placehold.it/320x240/2c8" alt="">
+                            <h4 class="item_tit">상품 제목1</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#it2">
+                            <img src="https://placehold.it/320x240/2c8" alt="">
+                            <h4 class="item_tit">상품 제목2</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#it3">
+                            <img src="https://placehold.it/320x240/2c8" alt="">
+                            <h4 class="item_tit">상품 제목3</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#it4">
+                            <img src="https://placehold.it/320x240/2c8" alt="">
+                            <h4 class="item_tit">상품 제목4</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#it5">
+                            <img src="https://placehold.it/320x240/2c8" alt="">
+                            <h4 class="item_tit">상품 제목5</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="item2">
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/c38" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/c38" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/c38" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/c38" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/c38" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="item3">
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/83c" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/83c" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/83c" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/83c" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/83c" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="item4">
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/333" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/333" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/333" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/333" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/333" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="item5">
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/888" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/888" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/888" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/888" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="https://placehold.it/320x240/888" alt="">
+                            <h4 class="item_tit">상품 제목</h4>
+                            <p class="item_com">상품 설명</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <footer class="ft">
+            <div class="ft_top_wrap">
+                <div class="ft_wrap">
+                    <ul class="ft_col">
+                        <li>
+                            <h4 class="ft_tit">C/S</h4>
+                            <p>
+                                <span class="ft_item tel">1899-5031</span>
+                                <span class="ft_item">MON-FRI AM 9:00 - PM 6:00</span>
+                                <span class="ft_item strong">CLOSED</span>
+                                <span class="ft_item">AM 12:00 - PM 1:00</span>
+                                <span class="ft_item">& WEEKEND & HOLIDAYS</span>
+                            </p>
+                        </li>
+                        <li>
+                            <h4 class="ft_tit">INFORMATION</h4>
+                            <p>
+                                <span class="ft_item">
+                                    상호 (주) 대웅제약  &nbsp; &nbsp; 대표이사 전승호 &nbsp;&nbsp; 사업자등록번호 124-86-01143
+                                </span>
+                                <span class="ft_item">통신판매업 신고 제2019-화성향남-0140호</span>
+                                <span class="ft_item">
+                                    전화 1899-5031 &nbsp; &nbsp;
+                                    주소 경기도 화성시 
+                                    향남읍 제약공단4길 35-14 대웅제약
+                                </span>
+                                <span class="ft_item">
+                                    개인정보관리책임자 <a href="mailto:mallcs@daewoong.co.kr">박영호 (mallcs@daewoong.co.kr)</a>
+                                </span>
+                                <span class="ft_item">&nbsp; </span>
+                            </p>
+                        </li>
+                        <li>
+                            <h4 class="ft_tit"></h4>
+                            <p class="ft_logo">
+                                <img src="https://placehold.it/200x52/ddd" alt="하단로고">
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ft_bottom_wrap">
+                <div class="ft_wrap">
+                    <ul class="fnb">
+                        <li><a href="member.html#page1">이용약관</a></li>
+                        <li><a href="member.html#page2">개인정보취급방침</a></li>
+                        <li><a href="member.html#page3">이용안내</a></li>
+                        <li><a href="site_map.html">사이트맵</a></li>
+                    </ul>
+                    <p class="copyright">Copyrights 2020. kim. All rights reserved. </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="it1" class="it_pop">
+        <div class="item_pop">
+            <div class="pop_head">
+                <h3 class="pop_tit">상품보기1</h3>
+                <a href="#" class="pop_close">X</a>
+            </div>
+            <div class="pop_item_box">
+                <img src="https://placehold.it/600x400/333" alt="">
+                <h2 class="pop_item_tit">상품 제목1</h2>
+                <p class="pop_item_com">상품 설명 : 가격 : 수량 :</p>
+            </div>
+        </div>
+    </div>
+    <div id="it2" class="it_pop">
+        <div class="item_pop">
+            <div class="pop_head">
+                <h3 class="pop_tit">상품보기2</h3>
+                <a href="#" class="pop_close">X</a>
+            </div>
+            <div class="pop_item_box">
+                <img src="https://placehold.it/600x400/2c8" alt="">
+                <h2 class="pop_item_tit">상품 제목2</h2>
+                <p class="pop_item_com">상품 설명 : 가격 : 수량 :</p>
+            </div>
+        </div>
+    </div>
+    <div id="it3" class="it_pop">
+        <div class="item_pop">
+            <div class="pop_head">
+                <h3 class="pop_tit">상품보기3</h3>
+                <a href="#" class="pop_close">X</a>
+            </div>
+            <div class="pop_item_box">
+                <img src="https://placehold.it/600x400/839" alt="">
+                <h2 class="pop_item_tit">상품 제목3</h2>
+                <p class="pop_item_com">상품 설명 : 가격 : 수량 :</p>
+            </div>
+        </div>
+    </div>
+    <div id="it4" class="it_pop">
+        <div class="item_pop">
+            <div class="pop_head">
+                <h3 class="pop_tit">상품보기4</h3>
+                <a href="#" class="pop_close">X</a>
+            </div>
+            <div class="pop_item_box">
+                <img src="https://placehold.it/600x400/c82" alt="">
+                <h2 class="pop_item_tit">상품 제목4</h2>
+                <p class="pop_item_com">상품 설명 : 가격 : 수량 :</p>
+            </div>
+        </div>
+    </div>
+    <div id="it5" class="it_pop">
+        <div class="item_pop">
+            <div class="pop_head">
+                <h3 class="pop_tit">상품보기5</h3>
+                <a href="#" class="pop_close">X</a>
+            </div>
+            <div class="pop_item_box">
+                <img src="https://placehold.it/600x400" alt="">
+                <h2 class="pop_item_tit">상품 제목5</h2>
+                <p class="pop_item_com">상품 설명 : 가격 : 수량 :</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

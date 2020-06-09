@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>탭 구현</title>
+    <style>
+    * { margin: 0; padding: 0; }
+    body, html { width: 100%; }
+    ul { list-style: none; }
+    a { text-decoration: none; }
+
+    #gnb { width: 970px; margin: 20px auto; height: 40px; position: relative; }
+    #gnb li { float:left; width: 240px; line-height: 40px; position:relative; background:rgba(255,255,255,0.8); border:1px solid #333; }
+    #gnb li a { display:block; text-align:center; color:#333; }
+    #gnb li a:hover { color:deepskyblue; }
+    #gnb li .sub { display:none; position:absolute; left: 0; top:40px; 
+    z-index:999; }
+    #gnb li:hover .sub { display:block; } 
+
+    .tb_frame, #tab1, #tab2 { clear:both; width:800px; margin:40px auto; height:600px; 
+    position:relative; }
+
+    .tab_btn { display:block; width: 150px; line-height:40px; 
+    text-align:center; border:2px solid orange; color:#333; position:absolute; top:0px; }
+    #tb1 .tab_btn { left: 0; }
+    #tb2 .tab_btn { left: 160px; }
+    #tb3 .tab_btn { left: 320px; }
+    #tb4 .tab_btn { left: 480px; }
+
+
+    .tb_box { display:none; margin-top:50px; padding-top:80px; }
+    .tb:target .tb_box { display:block; }
+    .tb:target .tab_btn { background:orange; }
+
+    .tb_frame { border-top:5px solid #333; margin-top: 50px; }
+    #tab2 .tb_box { margin-top: 10px; padding-top: 10px; }
+    .lb_box label { display:block; width: 150px; line-height: 40px; 
+    border:2px solid gold; text-align:center; float:left; margin:7px; 
+    cursor:pointer; }
+
+    .ra { display:none; }
+    #ra1:checked ~ #tab2 #tb1 .tb_box { display:block; }
+    #ra2:checked ~ #tab2 #tb2 .tb_box { display:block; }
+    #ra3:checked ~ #tab2 #tb3 .tb_box { display:block; }
+    #ra4:checked ~ #tab2 #tb4 .tb_box { display:block; }
+
+    #ra1:checked ~ .lb_box .tab_btn1 { background:gold; }
+    #ra2:checked ~ .lb_box .tab_btn2 { background:gold; }
+    #ra3:checked ~ .lb_box .tab_btn3 { background:gold; }
+    #ra4:checked ~ .lb_box .tab_btn4 { background:gold; }
+    </style>
+</head>
+<body>
+    <nav id="gnb">
+        <ul class="main">
+            <li class="dp1">
+                <a>회사소개</a>
+                <ul class="sub">
+                    <li><a href="widget02.html#tb1">인사말</a></li>
+                    <li><a href="widget02.html#tb2">회사연혁</a></li>
+                    <li><a href="widget02.html#tb3">조직</a></li>
+                    <li><a href="widget02.html#tb4">오시는길</a></li>
+                </ul>
+            </li>
+            <li class="dp1">
+                <a>제품소개</a>
+                <ul class="sub">
+                    <li><a href="product.html#tb1">제품1</a></li>
+                    <li><a href="product.html#tb2">제품2</a></li>
+                    <li><a href="product.html#tb3">제품3</a></li>
+                    <li><a href="product.html#tb4">제품4</a></li>
+                </ul>
+            </li>
+            <li class="dp1">
+                <a>서비스</a>
+                <ul class="sub">
+                    <li><a href="service.html#tb1">서비스1</a></li>
+                    <li><a href="service.html#tb2">서비스2</a></li>
+                    <li><a href="service.html#tb3">서비스3</a></li>
+                    <li><a href="service.html#tb4">서비스4</a></li>
+                </ul>
+            </li>
+            <li class="dp1">
+                <a href="">고객센터</a>
+                <ul class="sub">
+                    <li><a href="qna.html">묻고 답하기</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="notice.html">공지사항</a></li>
+                    <li><a href="as.html">A/S신청</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <div class="tb_frame">
+        <ul id="tab1">
+            <li id="tb1" class="tb">
+                <a href="#tb1" class="tab_btn">인사말</a>
+                <div class="tb_box" id="tb_box1">
+                    <h2 class="tb_tit">내용1</h2>
+                    <img src="https://placehold.it/800x400/c28" alt="">
+                </div>
+            </li>
+            <li id="tb2" class="tb">
+                <a href="#tb2" class="tab_btn">회사연혁</a>
+                <div class="tb_box" id="tb_box2">
+                    <h2 class="tb_tit">내용2</h2>
+                    <img src="https://placehold.it/800x400/2c8" alt="">
+                </div>
+            </li>
+            <li id="tb3" class="tb">
+                <a href="#tb3" class="tab_btn">조직</a>
+                <div class="tb_box" id="tb_box3">
+                    <h2 class="tb_tit">내용3</h2>
+                    <img src="https://placehold.it/800x400/222" alt="">
+                </div>
+            </li>
+            <li id="tb4" class="tb">
+                <a href="#tb4" class="tab_btn">오시는길</a>
+                <div class="tb_box" id="tb_box4">
+                    <h2 class="tb_tit">내용4</h2>
+                    <img src="https://placehold.it/800x400/8c2" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="tb_frame">
+        <input type="radio" name="ra" id="ra1" class="ra" checked>
+        <input type="radio" name="ra" id="ra2" class="ra" >
+        <input type="radio" name="ra" id="ra3" class="ra" >
+        <input type="radio" name="ra" id="ra4" class="ra" >
+        <div class="lb_box">
+            <label for="ra1" class="tab_btn1">회사소개</label>
+            <label for="ra2" class="tab_btn2">인사말</label>
+            <label for="ra3" class="tab_btn3">조직</label>
+            <label for="ra4" class="tab_btn4">오시는길</label>
+        </div>
+        <ul id="tab2">
+            <li id="tb1">
+                <div class="tb_box">
+                    <h2 class="tb_tit"></h2>
+                    <img src="https://placehold.it/800x400/2c8" alt="">
+                </div>
+            </li>
+            <li id="tb2">
+                <div class="tb_box">
+                    <h2 class="tb_tit"></h2>
+                    <img src="https://placehold.it/800x400/222" alt="">
+                </div>
+            </li>
+            <li id="tb3">
+                <div class="tb_box">
+                    <h2 class="tb_tit"></h2>
+                    <img src="https://placehold.it/800x400/c28" alt="">
+                </div>
+            </li>
+            <li id="tb4">
+                <div class="tb_box">
+                    <h2 class="tb_tit"></h2>
+                    <img src="https://placehold.it/800x400/8c3" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

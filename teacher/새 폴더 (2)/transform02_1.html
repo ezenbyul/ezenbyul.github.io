@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D transform(트랜스폼-3D 변형)</title>
+    <script src="./test.js"></script>
+    <style>
+    ul { list-style:none; }    
+    .wrap, .container { width:1280px; margin: 0 auto; border:1px solid #333; }
+    .box { clear:both; margin: 50px; position:relative; width: 500px; 
+    height: 500px; margin:50px auto; transform-style:preserve-3d;
+    backface-visibility:hidden; }
+    /* perspective(배율 및 거리) : 원근감을 표현함 */
+    /* transform-style: 전체 3D 형태를 유지할 것인지 유무 설정 
+        flat:평면, preserve-3d:입체 */
+    /* backface-visibility: 입체면에서 뒷면을 보이게 할 것인지 유무 설정
+        visible:뒷면 보이게, hidden:뒷면 안보이게 */
+    .box li { position:absolute; width: 200px; height: 200px;  text-align:center; color:#fff; line-height: 70px; opacity:0.75;}
+    .side1 { background:red;  /* 정면  */
+    transform:rotateY(0deg) translate3d(0,0,100px); }
+    .side2 { background:blue; /* 오른쪽 면 */
+    transform:rotateY(90deg) translate3d(0,0,100px); }
+    .side3 { background:yellow; /* 뒷면 */
+    transform:rotateY(180deg) translate3d(0,0,100px); }
+    .side4 { background:green;   /* 왼쪽 면  */
+    transform:rotateY(270deg) translate3d(0,0,100px); }
+    .side5 { background:#333;   /* 윗면  */
+    transform:rotateX(90deg) translate3d(0,0,100px); }
+    .side6 { background:magenta; /* 밑면  */
+    transform:rotateX(270deg) translate3d(0,0,100px); }
+
+    #box_01 { animation-name:ani1; animation-duration:5s; animation-iteration-count:2; animation-fill-mode: both;
+    animation-timing-function:ease-in; animation-delay:0.5s; 
+    animation-direction:alternate-reverse; animation-play-state:running; }
+    #box_01:hover { animation-play-state: paused; }
+    @keyframes ani1 {
+        0% { transform:rotateX(45deg); }
+        30% { transform:rotateX(-45deg); }
+        100% { transform:rotateX(90deg); }
+    }
+    /* 애니메이션을 적용할 요소에 지정하는 animation 속성
+    animation-name: 애니메이션 이름
+    animation-duration:애니메이션 시간
+    animation-iteration-count:애니메이션 실행 횟수
+    animation-fill-mode:정해진 애니메이션 시간이 종료된 후 결과화면 표시방법
+        both(종료화면 그대로 정지), forward(처음 진행상태로 표시), backward(원래 상태로 복귀되어 표시), none(원래 기본값으로 돌아감) 
+    animation-timing-function:가속감속 시간제어 함수를 적용
+        linear(등속도), ease(약가속), ease-in(가속), ease-out(감속), ease-in-out(가속후감속), cubic-bezier(복수변화량값)
+    animation-delay:지연시간
+    animation-direction:애니메이션 진행 방향
+        normal(순방향애니메이션 0%->100%), reverse(역방향애니메이션 100%->0%), alternate(정방향역방향애니메이션 0%->100%->0%)
+        alternate-reverse(역방향정방향애니메이션 100%->0%->100%)
+    animation-play-state: 애니메이션 상태 제어
+        paused(일시정지), running(실행) */
+    /* 
+    @keyframes 애니메이션이름 {
+        0% { 시작값 }
+        %단위(0%보다는 크고, 100%보다는 작은 %단위값) { 중간값 }
+        100% { 종료값 }
+    } 
+    */
+    /* rotateX(deg/turn/rad/grad) : x축(가로선)을 회전축으로 하여 회전*/
+    #box_02 { animation-name:ani2; animation-duration:6s; 
+    animation-iteration-count:infinite;  }
+    @keyframes ani2 {
+        0% { transform:rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+        100% { transform:rotateX(360deg) rotateY(360deg) rotateZ(360deg); }
+    }
+    /* rotateY(deg/turn/rad/grad) : y축(세로선)을 회전축으로 하여 회전*/
+    #box_03 { }
+    /* rotateZ(deg/turn/rad/grad) : z축(보이는평면)을 회전축으로 하여 회전*/
+
+    #box_04 { }
+    /* translate3d(x축이동량,y축이동량,z축이동량) : 각 x/y/z축의 원점에서 이동 - 원점(0,0,0의 좌표를 갖는 값으로 화면에 보이는 브라우저화면의좌측상단점) */
+
+    #box_05 { }
+    /* translateZ(z축이동량) : z축의 이동량으로 값이 클수록 브라우저화면과 멀어지고, 값이 작을 수록 브라우저화면과 가까워짐  */
+
+    #box_06 { }
+    /* scale3d(x가로배율,y세로배율,z깊이배율) : 각 x/y/z축의 확대/축소 배율을 한 번에 설정함 */
+
+    #box_07 { }
+    /* scaleZ(z깊이배율) : 각 z축의 확대/축소 배율을 설정함 */
+
+    .box_fr { }
+    #box_08 { }
+
+    .container { clear:both; position:relative; height: 1000px; }
+    .cube { clear:both; }
+    /* perspective(배율 및 거리) : 원근감을 표현함 */
+    /* transform-style: 전체 3형태를 유지할 것인지 유무 설정*/
+    /* backface-visibility: 입체면에서 뒷면을 보이게 할 것인지 유무 설정 */
+    .cube li { width: 150px; height: 150px; text-align:center; line-height: 150px;  font-size:32px; }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+
+    </div>
+    <div class="container">
+        <ul class="cube">
+            <li class="side1">면1</li>
+            <li class="side2">면2</li>
+            <li class="side3">면3</li>
+            <li class="side4">면4</li>
+            <li class="side5">면5</li>
+            <li class="side6">면6</li>
+        </ul>
+    </div>
+</body>
+</html>
