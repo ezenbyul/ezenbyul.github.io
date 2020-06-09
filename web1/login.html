@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- xeicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+
+    <title>메인페이지</title>
+
+    <style>
+        /*************************************/
+        /*               reset               */
+        /*************************************/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            width: 100%;
+            min-width: 1280px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            user-select: none;
+        }
+
+        .contents {
+            width: 960px;
+            margin: 0 auto;
+        }
+        .page{
+            width: 960px;
+            margin: 10px auto;
+        }
+        .page_tit{
+            font-size: 30px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        .frm{
+            margin-top: 30px;
+        }
+        .frm fieldset, .frm .btn_fr{
+            border: 0; outline: 0; width: 320px; margin: 20px auto;
+        }
+        .indata{
+            display: block;
+            width: 400px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 20px;
+            text-indent: 14px;
+        }
+        .btn_ft ,.fr_commnet{
+            width: 410px;
+            margin: 0 auto;
+        }
+        .btn_ft li{
+            float: left;
+        }
+        .ft_btn{
+            display: block;
+            width: 100px;
+            text-align: center;
+            height: 42px;
+            line-height: 42px;
+            color: #fff;
+            background: #333;
+            outline: 0;
+            border: 0;
+            border-radius: 8px;
+            cursor: pointer;
+            margin: 18px;
+        }
+        .fr_commnet{
+            clear: both;
+            line-height: 50px;
+            border-top: 1px solid #e1e4e8;
+        }
+        .fr_commnet a{
+            color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <!-- 980 m-0 auto-->
+            <div class="top-wrap">
+                <div class="tnb">
+                    <ul>
+                        <li><a href="login.html">LOGIN/JOIN</a></li>
+                        <li><a href="cart.html">CART</a></li>
+                        <li><a href="">MY PAGE</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bot-wrap">
+                <div class="bot-wrap-1">
+                    <div class="logo">
+                        <a href="index2.html"><img src="./img/main/logo.png" alt=""></a>
+                    </div>
+                    <nav class="gnb">
+                        <ul>
+                            <li><a href="type.html">제품유형별</a></li>
+                            <li><a href="">제품라인별</a></li>
+                            <li><a href="">베스트</a></li>
+                            <li><a href="">행사상품</a></li>
+                            <li><a href="">신제품</a></li>
+                            <li><a href="review.html">리뷰</a></li>
+                            <li><a href="brand.html">브랜드</a></li>
+                            <li><a href="event.html">이벤트</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+        <hr>
+    </div>
+    <div class="bread">
+        <ul class="bc">
+            <li><a href="index2.html"><i class="xi-home"></i></a></li>
+            <li><span>login</span></li>
+        </ul class="bc">
+    </div>
+    <div class="clear"></div>
+    <main class="contents">
+        <section class="page" id="login">
+            <h1 class="page_tit">로그인</h1>
+            <form action="" id="frm1" name="login" class="frm">
+                <fieldset>
+                    <input type="text" placeholder="ID를 입력하세요" class="indata" id="id" name="id" autofocus required>
+                    <input type="password" placeholder="PW를 입력하세요" class="indata" id="pw" name="pw" required>
+                </fieldset>
+                <ul class="btn_ft">
+                    <li>
+                        <input type="submit" value="로그인" class="ft_btn">
+                    </li>
+                    <li>
+                        <input type="reset" value="취소" class="ft_btn">
+                    </li>
+                    <li>
+                        <a href="join.html" class="ft_btn">회원가입</a>
+                    </li>
+                </ul>
+            </form>
+            <div class="fr_commnet">
+                <p><a href="">아이디를 잊으셨습니까?</a></p>
+                <p><a href="">패스워드를 잊으셨습니까?</a></p>
+            </div>
+        </section>
+    </main>
+    <div class="clear"></div>
+    <footer class="ft">
+        <div class="ft_top_wrap">
+            <nav class="ftp">
+                <div class="ftp_1">
+                    <ul>
+                        <li class="ftp_1_a_first"><a href="">list_1</a></li>
+                        <li><a href="">list_2</a></li>
+                        <li><a href="">list_3</a></li>
+                        <li><a href="">list_4</a></li>
+                        <li><a href="">list_5</a></li>
+                        <li><a href="">list_6</a></li>
+                        <li><a href="">list_7</a></li>
+                        <li class="ftp_1_a_last"><a href="">list_8</a></li>
+                    </ul>
+                </div>
+                <div class="ftp_2">
+                    <ul>
+                        <li><a href=""><i class="xi-facebook-official"></i></a></li>
+                        <li><a href=""><i class="xi-instagram"></i></a></li>
+                        <li><a href=""><i class="xi-youtube-play"></i></a></li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+        <div class="ft_bot_wrap">
+            <div class="ft_logo">
+                <ul class="ft_list">
+                    <li></li>
+                    <li>
+                        <span>
+                            <p>사업자 등록번호 : 113-81-17562</p>
+                            <p>통신판매업신고 번호 : 제2011-서울종로-1012호</p>
+                            <p>주소 : 서울특별시 종로구 새문안로 58, 1층(신문로2가)</p>
+                            <p>대표이사 : 이재선</p>
+                            <p>개인정보 보호책임자 : 이재선</p>
+                            <p>온라인 홈페이지 관련문의 : 080-855-1600</p>
+                            <p>오프라인(매장) 관련 문의 : 080-050-3300</p>
+                            <p class="copyright">COPYRIGHTS©2015 ㈜더페이스샵 ALL RIGHT RESERVED.</p>
+                        </span>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- xeicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+
+    <title>리뷰 페이지</title>
+
+    <style>
+        /*************************************/
+        /*               reset               */
+        /*************************************/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            width: 100%;
+            min-width: 1280px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            user-select: none;
+        }
+
+        .contents {
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .headTit {
+            font-size: 20px;
+            height: 30px;
+            line-height: 30px;
+        }
+
+        .wrap {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .text {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .reviewSubTit {
+            font-size: 20px;
+            overflow: hidden;
+        }
+
+        .col1 .text h1 {
+            padding-top: 40px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .col1 .text p {
+            height: 80px;
+            line-height: 40px;
+        }
+
+        .subwrap {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        .col1 {
+            display: block;
+            width: 470px;
+            height: 614px;
+            float: left;
+        }
+
+        .col1 a {
+            display: block;
+            width: 470px;
+            height: 400px;
+            border: 1px solid #e1e4e8;
+            background-image: url("./img/Review/01.jpg");
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .col2_st {
+            display: block;
+            width: 470px;
+            float: right;
+        }
+
+        .col2 {
+            width: 470px;
+            display: block;
+        }
+
+        .col2:first-child a {
+            display: block;
+            width: 470px;
+            height: 148px;
+            background-image: url("./img/Review/02.jpg");
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .col2:last-child a {
+            display: block;
+            width: 470px;
+            height: 148px;
+            background-image: url("./img/Review/03.jpg");
+            background-size: cover;
+            background-position: center center;
+        }
+
+
+        .col2 .text h1 {
+            padding-top: 10px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .col2 .text h2 {
+            padding-top: 10px;
+            height: 20px;
+            line-height: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .col2 .text p {
+            font-size: 13px;
+            height: 20px;
+            line-height: 10px;
+        }
+
+        .col_12 {
+            display: block;
+            width: 960px;
+            height: 550px;
+            border-bottom: 2px solid #e1e4e8;
+        }
+
+        .col3 {
+            width: 300px;
+            height: 330px;
+            margin-right: 25px;
+            display: block;
+            float: left;
+        }
+
+        .col3:nth-child(3n) {
+            margin-right: 0;
+        }
+
+        .col3 a {
+            display: block;
+            width: 300px;
+            height: 270px;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .col3:first-child a {
+            background-image: url("./img/Review/03.jpg");
+        }
+
+        .col3:nth-child(2) a {
+            background-image: url("./img/Review/04.jpg");
+        }
+
+        .col3:nth-child(3) a {
+            background-image: url("./img/Review/05.jpg");
+        }
+
+        .col3:nth-child(4) a {
+            background-image: url("./img/Review/06.jpg");
+        }
+
+        .col3:nth-child(5) a {
+            background-image: url("./img/Review/07.jpeg");
+        }
+
+        .col3:nth-child(6) a {
+            background-image: url("./img/Review/08.jpg");
+        }
+
+        .col3:nth-child(7) a {
+            background-image: url("./img/Review/09.jpg");
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <!-- 980 m-0 auto-->
+            <div class="top-wrap">
+                <div class="tnb">
+                    <ul>
+                        <li><a href="login.html">LOGIN/JOIN</a></li>
+                        <li><a href="cart.html">CART</a></li>
+                        <li><a href="">MY PAGE</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bot-wrap">
+                <div class="bot-wrap-1">
+                    <div class="logo">
+                        <a href="index2.html"><img src="./img/main/logo.png" alt=""></a>
+                    </div>
+                    <nav class="gnb">
+                        <ul>
+                            <li><a href="type.html">제품유형별</a></li>
+                            <li><a href="">제품라인별</a></li>
+                            <li><a href="">베스트</a></li>
+                            <li><a href="">행사상품</a></li>
+                            <li><a href="">신제품</a></li>
+                            <li><a href="review.html">리뷰</a></li>
+                            <li><a href="brand.html">브랜드</a></li>
+                            <li><a href="event.html">이벤트</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+        <hr>
+    </div>
+    <div class="bread">
+        <ul class="bc">
+            <li><a href="index2.html"><i class="xi-home"></i></a></li>
+            <li><span>review</span></li>
+        </ul class="bc">
+    </div>
+    <div class="clear"></div>
+    <main class="contents">
+        <div class="wrap">
+            <div class="headTit">
+                <h1>사용자 리뷰</h1>
+            </div>
+            <div class="subwrap">
+                <div class="col_12">
+                    <div class="col1">
+                        <a href=""></a>
+                        <div class="text">
+                            <h1 class="reviewTit">reviewTit</h1>
+                            <h2 class="reviewSubTit">reviewSubTit</h2>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="col2_st">
+                        <div class="col2">
+                            <a href=""></a>
+                            <div class="text">
+                                <h1 class="reviewTit">reviewTit</h1>
+                                <h2 class="reviewSubTit">reviewSubTit</h2>
+                                <p>Text</p>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <a href=""></a>
+                            <div class="text">
+                                <h1 class="reviewTit">reviewTit</h1>
+                                <h2 class="reviewSubTit">reviewSubTit</h2>
+                                <p>Text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="col3_set">
+                    <div class="col3">
+                        <a href=""></a>
+                        <div class="text">
+                            <h1 class="reviewTit">reviewTit</h1>
+                            <h2 class="reviewSubTit">reviewSubTit</h2>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="col3">
+                        <a href=""></a>
+                        <div class="text">
+                            <h1 class="reviewTit">reviewTit</h1>
+                            <h2 class="reviewSubTit">reviewSubTit</h2>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="col3">
+                        <a href=""></a>
+                        <div class="text">
+                            <h1 class="reviewTit">reviewTit</h1>
+                            <h2 class="reviewSubTit">reviewSubTit</h2>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="col3">
+                        <a href=""></a>
+                        <div class="text">
+                            <h1 class="reviewTit">reviewTit</h1>
+                            <h2 class="reviewSubTit">reviewSubTit</h2>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="col3">
+                        <a href=""></a>
+                        <div class="text">
+                            <h1 class="reviewTit">reviewTit</h1>
+                            <h2 class="reviewSubTit">reviewSubTit</h2>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                    <div class="col3">
+                        <a href=""></a>
+                        <div class="text">
+                            <h1 class="reviewTit">reviewTit</h1>
+                            <h2 class="reviewSubTit">reviewSubTit</h2>
+                            <p>Text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="clear"></div>
+    <footer class="ft">
+        <div class="ft_top_wrap">
+            <nav class="ftp">
+                <div class="ftp_1">
+                    <ul>
+                        <li class="ftp_1_a_first"><a href="">list_1</a></li>
+                        <li><a href="">list_2</a></li>
+                        <li><a href="">list_3</a></li>
+                        <li><a href="">list_4</a></li>
+                        <li><a href="">list_5</a></li>
+                        <li><a href="">list_6</a></li>
+                        <li><a href="">list_7</a></li>
+                        <li class="ftp_1_a_last"><a href="">list_8</a></li>
+                    </ul>
+                </div>
+                <div class="ftp_2">
+                    <ul>
+                        <li><a href=""><i class="xi-facebook-official"></i></a></li>
+                        <li><a href=""><i class="xi-instagram"></i></a></li>
+                        <li><a href=""><i class="xi-youtube-play"></i></a></li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+        <div class="ft_bot_wrap">
+            <div class="ft_logo">
+                <ul class="ft_list">
+                    <li></li>
+                    <li>
+                        <span>
+                            <p>사업자 등록번호 : 113-81-17562</p>
+                            <p>통신판매업신고 번호 : 제2011-서울종로-1012호</p>
+                            <p>주소 : 서울특별시 종로구 새문안로 58, 1층(신문로2가)</p>
+                            <p>대표이사 : 이재선</p>
+                            <p>개인정보 보호책임자 : 이재선</p>
+                            <p>온라인 홈페이지 관련문의 : 080-855-1600</p>
+                            <p>오프라인(매장) 관련 문의 : 080-050-3300</p>
+                            <p class="copyright">COPYRIGHTS©2015 ㈜더페이스샵 ALL RIGHT RESERVED.</p>
+                        </span>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,429 @@
+@cherset "utf-8";
+
+.contents {
+    display: block;
+    width: 100%;
+    height: 455px;
+    margin-bottom: 50px;
+}
+
+.slide_ban-wrap {
+    width: 980px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide_ban {
+    width: 300%;
+}
+
+.ban_fade li {
+    float: left;
+}
+
+.slide_ban_dot {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+.visualTab {
+    width: 980px;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #e1e4e8;
+    margin-bottom: 30px;
+}
+
+.visualTab li {
+    width: 33.2%;
+    float: left;
+    line-height: 30px;
+    font-weight: 600;
+    border-left: 1px solid #e1e4e8;
+}
+
+.visualTab p:hover {
+    background-color: black;
+    color: #fff;
+}
+
+.main_tit {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    position: relative;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+.hotProductwrap {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.hotProductArea {
+    width: 657px;
+    margin-bottom: 40px;
+    float: left;
+    overflow-x: hidden;
+}
+
+.hotProductArea_sub {
+    width: 655px;
+    height: 350px;
+    border: 1px solid black;
+}
+
+.hotProductTab {
+    border: 1px solid #e1e4e8;
+}
+
+.hotProductTab ul {
+    display: block;
+}
+
+.hotProductTab li {
+    float: left;
+    display: list-item;
+    border-left: 1px solid black;
+}
+
+.hotProductTab ul li:first-child {
+    border-left: 0px;
+}
+
+.hotProductTab a {
+    background-color: darkgray;
+    color: #fff;
+    display: block;
+    position: relative;
+    width: 217px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.hotProductTab a:hover {
+    background-color: black;
+}
+
+.hotProductDraggable {
+    width: 600%;
+}
+
+.hotProductDraggable .hotProductActive {
+    float: left;
+}
+
+.hotProductActive .img img {
+    width: 210px;
+    margin: 4px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.titTxt {
+    width: 217px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.hotProductActive p {
+    text-align: center;
+}
+
+.saleProductActive {
+    width: 311px;
+    height: 350px;
+    margin-left: 10px;
+    float: left;
+    border: 1px solid black;
+
+}
+
+
+.saleProductActive .img img {
+    display: block;
+    width: 200px;
+    height: 250px;
+    margin: 10px auto;
+
+}
+
+.saleProductActive .img a:hover img {
+    width: 311px;
+    height: 270px;
+    margin: 0 auto;
+
+}
+
+.saleProductActive .titTxt {
+    width: 311px;
+}
+
+.saleProductActive .titTxt .prdt_name_1 {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.saleProductActive .prdt_price_1 {
+    width: 311px;
+    text-align: center;
+}
+
+.hot-stProductwrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hot-st-item {
+    width: 980px;
+    margin-top: 20px;
+}
+
+.hot-st-item ul li {
+    float: left;
+    margin-right: 10px;
+}
+
+.hot-st-item ul li:nth-child(3n) {
+    margin: 0;
+}
+
+.h40 {
+    height: 40px;
+}
+
+.hot-stproduct,
+.hotnews_wrap,
+.review_wrap {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.hotnews_list {}
+
+.hotnew_item {
+    display: block;
+}
+
+.hotnew_item li {
+
+    width: 313px;
+    display: block;
+}
+
+.hotnews_item a {
+    border: 1px solid black;
+
+    float: left;
+    margin-right: 17px;
+}
+
+.hotnews_item p {
+    width: 313px;
+    height: 50px;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+
+.hotnews_item .last a {
+    margin: 0;
+}
+
+.review_list {
+    width: 978px;
+    height: 240px;
+}
+
+.review_itemList {
+    overflow-y: hidden;
+    border: 1px solid black;
+}
+
+.review_itemList,
+.review_img,
+.review_con {
+    height: 240px;
+}
+
+.review_img,
+.review_con {
+    width: 240px;
+    display: block;
+    float: left;
+}
+
+.review_con a p {
+    margin-left: 25px;
+    color: black;
+}
+
+.review_con a p:first-child {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review_con a p:nth-child(2) {
+    font-size: 14px;
+    height: 17px;
+    line-height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review_con a p:nth-child(3) {
+    font-size: 19px;
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+
+.review_con a p:last-child {
+    font-size: 14px;
+    height: 17px;
+    line-height: 17px;
+    text-align: left;
+}
+
+.qr_notice {
+    display: block;
+    width: 980px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.qr_wrap {
+    display: block;
+    float: left;
+    margin-top: 30px;
+    width: 460px;
+}
+
+.qr_img {
+    width: 228px;
+    height: 180px;
+    display: block;
+    float: left;
+    border: 1px solid #e1e4e8;
+}
+
+.qr_img img {
+    margin: 10px;
+}
+
+.qr_csnum {
+    width: 228px;
+    height: 180px;
+    display: block;
+    float: left;
+    border: 1px solid #e1e4e8;
+}
+
+.qr_list {
+    display: block;
+    float: left;
+    width: 460px;
+    height: 60px;
+}
+
+.qr_item {
+    display: block;
+    float: left;
+    width: 152px;
+    height: 60px;
+    border-right: 1px solid #e1e4e8;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.qr_item:first-child {
+    border-left: 1px solid #e1e4e8;
+}
+
+.qr_text {
+    display: inline;
+}
+
+.qr_uni {
+    display: inline;
+}
+
+.main_borad {
+    display: block;
+    float: left;
+    margin-top: 30px;
+    width: 520px;
+    border-top: 1px solid #e1e4e8;
+}
+
+.notice {
+    display: block;
+    float: left;
+    width: 220px;
+    padding: 20px;
+}
+
+.notice .notice_tit {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.notice .notice_con li {
+    margin-bottom: 8px;
+}
+
+.notice .notice_con li a {
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    color: #777;
+    padding-left: 12px;
+}
+
+.brand {
+    display: block;
+    float: left;
+    width: 220px;
+    padding: 20px;
+}
+
+.brand .brand_tit {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.brand .brand_con li {
+    margin-bottom: 8px;
+}
+
+.brand .brand_con li a {
+    display: inline-block;
+    width: 100%;
+    font-size: 15px;
+    color: #777;
+    padding-left: 12px;
+}

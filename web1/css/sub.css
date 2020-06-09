@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+.contents {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.bread {
+    display: block;
+    width: 960px;
+    margin: 0 auto;
+    ;
+}
+
+.bread li {
+    display: block;
+    float: left;
+}
+
+.bread li a,
+.bread li span {
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    color: black;
+}
+
+.bread li a::after {
+    content: ">";
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.but_it {
+    clear: both;
+    width: 100%;
+}
+
+.but_lb {
+    width: 624px;
+    margin: 0 auto;
+    cursor: pointer;
+
+}
+
+.butlb .but_gr {
+    display: block;
+}
+
+.but_lb .but_gr li {
+    display: block;
+    float: left;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    background-color: #e1e4e8;
+    border: 1px solid black;
+    /* border-right: 0px;
+    border-bottom: 0px; */
+    text-align: center;
+    margin: 3px 3px;
+
+}
+
+.but_lb .but_gr li:hover {
+    background-color: blanchedalmond;
+}
+
+.but_lb .but_gr li:nth-child(3n) {
+    border-right: 1px solid black;
+}
+
+.but_lb .but_gr li:nth-child(4) {
+    border-bottom: 1px solid black;
+}
+
+.but_lb .but_gr li:nth-child(5) {
+    border-bottom: 1px solid black;
+}
+
+.but_lb .but_gr li:nth-child(6) {
+    border-bottom: 1px solid black;
+}
+
+.img_list {
+    clear: both;
+}
+
+.img_list {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.img_list ul {
+    margin-left: 5px;
+}
+
+.img_list ul li {
+    display: block;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.img_list ul li:nth-child(4n) img {
+    padding-right: 5px;
+}
+
+.tit {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    clear: both;
+    font-size: 25px;
+}
+
+.img_list ul , .bt_class{
+    display: none;
+}
+
+#bi0:checked~.img_list ul {
+    display: block;
+}
+
+#bi1:checked~.img_list .img_list_1,
+.img_list .img_list_1 ul {
+    display: block;
+}
+
+#bi2:checked~.img_list .img_list_2,
+.img_list .img_list_2 ul {
+    display: block;
+}
+
+#bi3:checked~.img_list .img_list_3,
+.img_list .img_list_3 ul {
+    display: block;
+}
+
+#bi4:checked~.img_list .img_list_4,
+.img_list .img_list_4 ul {
+    display: block;
+}
+
+#bi5:checked~.img_list .img_list_5,
+.img_list .img_list_5 ul {
+    display: block;
+}

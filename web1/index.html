@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        /*************************************/
+        /*               reset               */
+        /*************************************/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            width: 100%;
+            min-width: 980px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            user-select: none;
+        }
+
+        /*************************************/
+        /*               test                */
+        /*************************************/
+
+        /*************************************/
+        /*             all-modul             */
+        /*************************************/
+        .wrap {
+            width: 980px;
+            margin: 0 auto;
+        }
+
+        .hd {
+            width: 100%;
+            height: 150px;
+            position: relative;
+        }
+
+        .top-wrap {
+            width: 100%;
+            height: 50px;
+        }
+
+        .tnb ul {
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 5px;
+        }
+
+        .tnb li {
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        .tnb li a {
+            font-size: 13px;
+            color: #333;
+        }
+
+        .tnb li a:hover {
+            font-weight: bold;
+        }
+
+
+        .bot-wrap {
+            width: 100%;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+        .bot-wrap-1,
+        .bot-wrap-2 {
+            height: 50px;
+        }
+
+        .bot-wrap-2 {
+            border-top: 1px solid #888888;
+            border-bottom: 1px solid #888888;
+            background-color: #E0E0E0;
+        }
+
+        .logo::before {
+            clear: both;
+        }
+
+        .logo {
+            display: block;
+            position: absolute;
+            float: left;
+            margin-left: 80px;
+        }
+
+        .gnb {
+            display: block;
+            clear: both;
+            height: 27px;
+            float: right;
+            margin-right: 80px;
+        }
+
+        .gnb ul {
+            box-sizing: border-box;
+        }
+
+        .gnb li {
+            float: left;
+            margin-top: 10px;
+        }
+
+        .gnb a {
+            margin-left: 5px;
+            font-size: 19px;
+            color: #333;
+        }
+
+        .gnb a:hover {
+            font-weight: bold;
+        }
+
+        .subgnb {
+            clear: both;
+            display: block;
+        }
+
+        .subgnb ul {
+            position: absolute;
+            margin-top: 12.5px;
+            left: 38.3%;
+        }
+
+        .subgnb li {
+            display: block;
+            float: left;
+        }
+
+        .subgnb a {
+            font-size: 17px;
+            color: black;
+        }
+        .subgnb a:hover{
+            font-weight: bold;        
+        }
+/* 
+        .bot-wrap-2{
+            display: none;
+        }  
+        #subgnb_type{
+            display: none;
+        }
+        #subgnb_line{
+            display: none;
+        } */
+
+        .contents{
+            clear: both;
+            height: 2000px;
+        }
+        .ban_fade_img {
+            display: none;
+            width: 100%;
+        }
+        .slide_ban_dot{
+            display: inline-block;
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #888;
+        }
+        .slide_ban_dot span{
+            width: 200px;
+            display: inline-block;
+            margin-left: 15px;
+            background-color: honeydew;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <div class="top-wrap">
+                <div class="tnb">
+                    <ul>
+                        <li><a href="">LOGIN/JOIN</a></li>
+                        <li><a href="">CART</a></li>
+                        <li><a href="">MY PAGE</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bot-wrap">
+                <div class="bot-wrap-1">
+                    <div class="logo">
+                        <a href="/index.html"><img src="./img/main/logo.png" alt=""></a>
+                    </div>
+                    <nav class="gnb">
+                        <ul>
+                            <li><a href="">제품유형별</a></li>
+                            <li><a href="">제품라인별</a></li>
+                            <li><a href="">베스트</a></li>
+                            <li><a href="">행사상품</a></li>
+                            <li><a href="">신제품</a></li>
+                            <li><a href="">리뷰</a></li>
+                            <li><a href="">브랜드</a></li>
+                            <li><a href="">이벤트</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="bot-wrap-2">
+                    <nav class="subgnb">
+                        <ul id=subgnb_type>
+                            <li><a href="">테스트1-1</a></li>
+                            <li><a href="">테스트1-2</a></li>
+                        </ul>
+                        <ul id=subgnb_line>
+                            <li><a href="">테스트2-1</a></li>
+                            <li><a href="">테스트2-2</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="contents">
+            <div class="slide_ban">
+                <div class="ban_fade">
+                    <ul>
+                        <li><img class="ban_fade_img" src="./img/main/main_banner3.jpg" alt="슬라이드이미지_1"><a href=""></a>
+                        </li>
+                        <li><img class="ban_fade_img" src="./img/main/main_banner1.jpg" alt="슬라이드이미지_1"><a href=""></a>
+                        </li>
+                        <li><img class="ban_fade_img" src="./img/main/main_banner2.jpg" alt="슬라이드이미지_1"><a href=""></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="ban_abut">
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div class="slide_ban_dot">
+                <span>이미지_1</span>
+                <span>이미지_2</span>
+                <span>이미지_3</span>
+            </div>
+
+
+            <div class="sale_product">
+                <div class="main_tit">
+                    <h3></h3>
+                </div>
+
+                <div class="more">
+                    <a href=""></a>
+                </div>
+                <ul class="sale_pro_tab">
+                    <div class="img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="titTxt">
+                        <p>제품명_1</p>
+                    </div>
+                    <p class="prdt_price_1">
+                        <span>27,000</span>
+                    </p>
+                    <div class="prdt_label">
+                        <div class="label_ranking">
+                            <span class="v_stnd"></span>
+                            <span class="v_center"></span>
+                        </div>
+                    </div>
+                    <div class="over">
+
+                    </div>
+                </ul>
+
+            </div>
+
+            <figure class="sale-stproduct">
+                <a href="">
+                    <img src="" alt="">
+                </a>
+            </figure>
+            <div class="hotnews">
+                <div class="main_tit">
+                    <h3>Hot & News</h3>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="" alt="">
+                            <p></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="" alt="">
+                            <p></p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="" alt="">
+                            <p></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="phot_review">
+                <div class="main_tit">
+                    <h3>Review</h3>
+                </div>
+            </div>
+            <div class="qr_notice">
+                <div class="qr_wrap">
+                    <div class="qr"></div>
+                    <div class="cs"></div>
+                    <div class="qr_wrap_dot">
+                        <ul>
+                            <li><a href=""></a></li>
+                            <li><a href=""></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main_borad">
+                <div class="notice"></div>
+                <div class="brand"></div>
+            </div>
+        </main>
+        <footer class="ft">
+            <div class="ft_top_wrap">
+                <nav class="ftp">
+                    <div class="ftp_1">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                    <div class="ftp_2">
+                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                        <a href=""><img src="" alt=""></a>
+                    </div>
+                </nav>
+            </div>
+            <div class="ft_bot_wrap">
+                <div class="ft_logo">
+                    <ul>
+                        <li><img src="" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script>
+        /******************************/
+        /*           SildeShow        */
+        /*****************************/
+        var slideindex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("ban_fade_img");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            slideindex++;
+            if (slideindex > x.length) {
+                slideindex = 1
+            }
+            x[slideindex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+    </script>
+</body>
+
+</html>

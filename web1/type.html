@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- xeicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/sub.css">
+
+    <title>메인페이지</title>
+
+    <style>
+        /*************************************/
+        /*               reset               */
+        /*************************************/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            width: 100%;
+            min-width: 1280px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            user-select: none;
+        }
+
+
+
+
+
+        .img_list ul,
+        .bt_class {
+            display: none;
+        }
+
+        #bi0:checked~.img_list ul {
+            display: block;
+        }
+
+        #bi1:checked~.img_list .img_list_1,
+        .img_list .img_list_1 ul {
+            display: block;
+        }
+
+        #bi2:checked~.img_list .img_list_2,
+        .img_list .img_list_2 ul {
+            display: block;
+        }
+
+        #bi3:checked~.img_list .img_list_3,
+        .img_list .img_list_3 ul {
+            display: block;
+        }
+
+        #bi4:checked~.img_list .img_list_4,
+        .img_list .img_list_4 ul {
+            display: block;
+        }
+
+        #bi5:checked~.img_list .img_list_5,
+        .img_list .img_list_5 ul {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <!-- 980 m-0 auto-->
+            <div class="top-wrap">
+                <div class="tnb">
+                    <ul>
+                        <li><a href="login.html">LOGIN/JOIN</a></li>
+                        <li><a href="cart.html">CART</a></li>
+                        <li><a href="">MY PAGE</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bot-wrap">
+                <div class="bot-wrap-1">
+                    <div class="logo">
+                        <a href="index2.html"><img src="./img/main/logo.png" alt=""></a>
+                    </div>
+                    <nav class="gnb">
+                        <ul>
+                            <li><a href="type.html">제품유형별</a></li>
+                            <li><a href="">제품라인별</a></li>
+                            <li><a href="">베스트</a></li>
+                            <li><a href="">행사상품</a></li>
+                            <li><a href="">신제품</a></li>
+                            <li><a href="review.html">리뷰</a></li>
+                            <li><a href="brand.html">브랜드</a></li>
+                            <li><a href="event.html">이벤트</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+        <hr>
+    </div>
+    <div class="bread">
+        <ul class="bc">
+            <li><a href="index2.html"><i class="xi-home"></i></a></li>
+            <li><span>type</span></li>
+        </ul class="bc">
+    </div>
+    <main class="contents">
+        <div class="but_it">
+            <input type="radio" name="btindex" id="bi0" class="bt_class" checked>
+            <input type="radio" name="btindex" id="bi1" class="bt_class">
+            <input type="radio" name="btindex" id="bi2" class="bt_class">
+            <input type="radio" name="btindex" id="bi3" class="bt_class">
+            <input type="radio" name="btindex" id="bi4" class="bt_class">
+            <input type="radio" name="btindex" id="bi5" class="bt_class">
+            <div class="but_lb">
+                <ul class="but_gr">
+                    <li><label for="bi0" class="but_lb0">전체</label></li>
+                    <li><label for="bi1" class="but_lb1">항목1</label></li>
+                    <li><label for="bi2" class="but_lb2">항목2</label></li>
+                    <li><label for="bi3" class="but_lb3">항목3</label></li>
+                    <li><label for="bi4" class="but_lb4">항목4</label></li>
+                    <li><label for="bi5" class="but_lb5">항목5</label></li>
+                </ul>
+            </div>
+
+            <div class="img_list">
+                <ul class="img_list_1">
+                    <div class="tit">
+                        <h1>아이템 1번 입니다.</h1>
+                    </div>
+                    <ul class="img_item_1">
+                        <li>
+                            <img src="http://placehold.it/200x180/1e3" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                    </ul>
+                </ul>
+                <ul class="img_list_2">
+                    <div class="tit">
+                        <h1>아이템 2번 입니다.</h1>
+                    </div>
+                    <ul class="img_item_2">
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/1e3" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                    </ul>
+                </ul>
+                <ul class="img_list_3">
+                    <div class="tit">
+                        <h1>아이템 3번 입니다.</h1>
+                    </div>
+                    <ul class="img_item_3">
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/1e3" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                    </ul>
+                </ul>
+                <ul class="img_list_4">
+                    <div class="tit">
+                        <h1>아이템 4번 입니다.</h1>
+                    </div>
+                    <ul class="img_item_4">
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/1e3" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                    </ul>
+                </ul>
+                <ul class="img_list_5">
+                    <div class="tit">
+                        <h1>아이템 5번 입니다.</h1>
+                    </div>
+                    <ul class="img_item_5">
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/1e3" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                        <li>
+                            <img src="http://placehold.it/200x180/777" alt="">
+                            <h4></h4>
+                            <p></p>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+
+
+    </main>
+    <div class="clear"></div>
+    <footer class="ft">
+        <div class="ft_top_wrap">
+            <nav class="ftp">
+                <div class="ftp_1">
+                    <ul>
+                        <li class="ftp_1_a_first"><a href="">list_1</a></li>
+                        <li><a href="">list_2</a></li>
+                        <li><a href="">list_3</a></li>
+                        <li><a href="">list_4</a></li>
+                        <li><a href="">list_5</a></li>
+                        <li><a href="">list_6</a></li>
+                        <li><a href="">list_7</a></li>
+                        <li class="ftp_1_a_last"><a href="">list_8</a></li>
+                    </ul>
+                </div>
+                <div class="ftp_2">
+                    <ul>
+                        <li><a href=""><i class="xi-facebook-official"></i></a></li>
+                        <li><a href=""><i class="xi-instagram"></i></a></li>
+                        <li><a href=""><i class="xi-youtube-play"></i></a></li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+        <div class="ft_bot_wrap">
+            <div class="ft_logo">
+                <ul class="ft_list">
+                    <li></li>
+                    <li>
+                        <span>
+                            <p>사업자 등록번호 : 113-81-17562</p>
+                            <p>통신판매업신고 번호 : 제2011-서울종로-1012호</p>
+                            <p>주소 : 서울특별시 종로구 새문안로 58, 1층(신문로2가)</p>
+                            <p>대표이사 : 이재선</p>
+                            <p>개인정보 보호책임자 : 이재선</p>
+                            <p>온라인 홈페이지 관련문의 : 080-855-1600</p>
+                            <p>오프라인(매장) 관련 문의 : 080-050-3300</p>
+                            <p class="copyright">COPYRIGHTS©2015 ㈜더페이스샵 ALL RIGHT RESERVED.</p>
+                        </span>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

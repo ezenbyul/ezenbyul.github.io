@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!-- xeicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xpressengine/xeicon@2.3.1/xeicon.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <title>메인페이지</title>
+
+    <style>
+        /*************************************/
+        /*               reset               */
+        /*************************************/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            width: 100%;
+            min-width: 1280px;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 400;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            user-select: none;
+        }
+
+        /*************************************/
+        /*               test                */
+        /*************************************/
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="hd">
+            <!-- 980 m-0 auto-->
+            <div class="top-wrap">
+                <div class="tnb">
+                    <ul>
+                        <li><a href="login.html">LOGIN/JOIN</a></li>
+                        <li><a href="cart.html">CART</a></li>
+                        <li><a href="">MY PAGE</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bot-wrap">
+                <div class="bot-wrap-1">
+                    <div class="logo">
+                        <a href="index2.html"><img src="./img/main/logo.png" alt=""></a>
+                    </div>
+                    <nav class="gnb">
+                        <ul>
+                            <li><a href="type.html">제품유형별</a></li>
+                            <li><a href="">제품라인별</a></li>
+                            <li><a href="">베스트</a></li>
+                            <li><a href="">행사상품</a></li>
+                            <li><a href="">신제품</a></li>
+                            <li><a href="review.html">리뷰</a></li>
+                            <li><a href="brand.html">브랜드</a></li>
+                            <li><a href="event.html">이벤트</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+    </div>
+
+    <main class="contents">
+        <div class="slide_ban-wrap">
+            <div class="slide_ban">
+                <div class="ban_fade">
+                    <ul>
+                        <li><img class="ban_fade_img" src="./img/main/main_banner3.jpg" alt="슬라이드이미지_1"><a href=""></a>
+                        </li>
+                        <li><img class="ban_fade_img" src="./img/main/main_banner1.jpg" alt="슬라이드이미지_1"><a href=""></a>
+                        </li>
+                        <li><img class="ban_fade_img" src="./img/main/main_banner2.jpg" alt="슬라이드이미지_1"><a href=""></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="ban_abut">
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="slide_ban_dot">
+            <ul class="visualTab">
+                <li>
+                    <p>이미지_1</p>
+                </li>
+                <li>
+                    <p>이미지_2</p>
+                </li>
+                <li>
+                    <p>이미지_3</p>
+                </li>
+            </ul>
+        </div>
+
+
+        <!-- <div class="hot_product">
+            <div class="main_tit">
+                <h2><strong>세일</strong> 제품</h2>
+            </div>
+
+            <div class="more">
+                <a href=""></a>
+            </div>
+            <ul class="hot_pro_tab">
+                <div class="img">
+                    <img src="" alt="">
+                </div>
+                <div class="titTxt">
+                    <p>제품명_1</p>
+                </div>
+                <p class="prdt_price_1">
+                    <span>27,000</span>
+                </p>
+                <div class="prdt_label">
+                    <div class="label_ranking">
+                        <span class="v_stnd"></span>
+                        <span class="v_center"></span>
+                    </div>
+                </div>
+                <div class="over">
+
+                </div>
+            </ul>
+
+        </div> -->
+        <div class="sub_body">
+            <div class="hotProductwrap">
+
+                <div class="hotProductArea">
+                    <div class="main_tit">
+                        <h2>인기 제품</h2>
+                    </div>
+                    <div class="hotProductArea_sub">
+                        <div class="hotProductTab">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        제품선택_1
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        제품선택_2
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        제품선택_3
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="hotProductSlide">
+                            <ul class="hotProductDraggable">
+                                <li class="hotProductActive">
+                                    <div class="img"><a href=""><img src="./img/hotProductSlide_Item/img_1.jpg"
+                                                alt=""></a></div>
+                                    <div class="titTxt">
+                                        <p class="prdt_name_1">상당히 길어요 제품이름이 뭐이리 길까요</p>
+                                    </div>
+                                    <p class="prdt_price_1">
+                                        <span>1000&#8361;</span>
+                                    </p>
+                                    <div class="prdt_label">
+                                        <div class="label_ranking">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hotProductActive">
+                                    <div class="img"><a href=""><img src="./img/hotProductSlide_Item/img_2.jpg"
+                                                alt=""></a></div>
+                                    <div class="titTxt">
+                                        <p class="prdt_name_2">상당히 길어요 제품이름이 뭐이리 길까요</p>
+                                    </div>
+                                    <p class="prdt_price_2">
+                                        <span>1000&#8361;</span>
+                                    </p>
+                                    <div class="prdt_label">
+                                        <div class="label_ranking">
+                                            <span></span><span></span></div>
+                                    </div>
+                                </li>
+                                <li class="hotProductActive">
+                                    <div class="img"><a href=""><img src="./img/hotProductSlide_Item/img_3.jpg"
+                                                alt=""></a></div>
+                                    <div class="titTxt">
+                                        <p class="prdt_name_3">상당히 길어요 제품이름이 뭐이리 길까요</p>
+                                    </div>
+                                    <p class="prdt_price_3">
+                                        <span>1000&#8361;</span>
+                                    </p>
+                                    <div class="prdt_label">
+                                        <div class="label_ranking">
+                                            <span></span><span></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hotProductActive">
+                                    <div class="img"><a href=""><img src="./img/hotProductSlide_Item/img_4.jpg"
+                                                alt=""></a></div>
+                                    <div class="titTxt">
+                                        <p class="prdt_name_4">상당히 길어요 제품이름이 뭐이리 길까요</p>
+                                    </div>
+                                    <p class="prdt_price_4">
+                                        <span>1000&#8361;</span>
+                                    </p>
+                                    <div class="prdt_label">
+                                        <div class="label_ranking">
+                                            <span></span><span></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hotProductActive">
+                                    <div class="img"><a href=""><img src="./img/hotProductSlide_Item/img_5.jpg"
+                                                alt=""></a></div>
+                                    <div class="titTxt">
+                                        <p class="prdt_name_5">상당히 길어요 제품이름이 뭐이리 길까요</p>
+                                    </div>
+                                    <p class="prdt_price_5">
+                                        <span>1000&#8361;</span>
+                                    </p>
+                                    <div class="prdt_label">
+                                        <div class="label_ranking">
+                                            <span></span><span></span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="hotProductActive">
+                                    <div class="img"><a href=""><img src="./img/hotProductSlide_Item/img_6.jpg"
+                                                alt=""></a></div>
+                                    <div class="titTxt">
+                                        <p class="prdt_name_6">상당히 길어요 제품이름이 뭐이리 길까요</p>
+                                    </div>
+                                    <p class="prdt_price_6">
+                                        <span>1000&#8361;</span>
+                                    </p>
+                                    <div class="prdt_label">
+                                        <div class="label_ranking">
+                                            <span></span><span></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="saleProductArea">
+                    <div class="main_tit">
+                        <h2>세일 제품</h2>
+                    </div>
+                    <div class="saleProductActive">
+                        <div class="img"><a href=""><img src="./img/hotProductSlide_Item/img_1.jpg" alt=""></a></div>
+                        <div class="titTxt">
+                            <p class="prdt_name_1">상당히 길어요 제품이름이 뭐이리 길까요</p>
+                        </div>
+                        <p class="prdt_price_1">
+                            <span>1000&#8361;</span>
+                        </p>
+                        <div class="prdt_label">
+                            <div class="label_ranking">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <figure class="hot-stproduct">
+                <a href="">
+                    <img src="./img/saleProductMainBanner/file_20200414102947930.jpg" alt="">
+                </a>
+                <div class="hot-st-item">
+                    <ul>
+                        <li><a href=""><img src="https://placehold.it/320x240/333" alt="임시이미지"></a></li>
+                        <li><a href=""><img src="https://placehold.it/320x240/333" alt="임시이미지"></a></li>
+                        <li><a href=""><img src="https://placehold.it/320x240/333" alt="임시이미지"></a></li>
+                        <li><a href=""><img src="https://placehold.it/320x240/333" alt="임시이미지"></a></li>
+                        <li><a href=""><img src="https://placehold.it/320x240/333" alt="임시이미지"></a></li>
+                        <li><a href=""><img src="https://placehold.it/320x240/333" alt="임시이미지"></a></li>
+                        <li><a href=""><img src="https://placehold.it/320x240/333" alt="임시이미지"></a></li>
+                        <li><a href=""><img src="https://placehold.it/320x240/333" alt="임시이미지"></a></li>
+                        <li><a href=""><img src="https://placehold.it/320x240/333" alt="임시이미지"></a></li>
+                    </ul>
+                </div>
+            </figure>
+            <div class="clear"></div>
+            <div class="hotnews_wrap">
+                <div class="hotnews_sub">
+                    <div class="main_tit">
+                        <h3>Hot & News</h3>
+                    </div>
+                    <div class="hotnews_list">
+                        <ul class="hotnews_item">
+                            <li>
+                                <a href="">
+                                    <img src="./img/hotNews/pc_list_banner_image_20200131143317817.jpg" alt="">
+                                    <p>안녕하세요 여기도 상당히 긴 글이 있을거에요 ^^ 이것보다도 참 많이 길어요 언제까지 내가 이짓 해야 하나 싶다 진짜 하... 짜증나</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./img/hotNews/pc_list_banner_image_20200131144227723.jpg" alt="">
+                                    <p>안녕하세요</p>
+                                </a>
+                            </li>
+                            <li class="last">
+                                <a href="">
+                                    <img src="./img/hotNews/pc_list_banner_image_20200131144677314.jpg" alt="">
+                                    <p>안녕하세요</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cleasr"></div>
+            <div class="review_wrap">
+                <div class="main_tit">
+                    <h3>Review</h3>
+                </div>
+                <div class="reivew_list">
+                    <ul class="review_itemList">
+                        <li>
+                            <div class="review_img">
+                                <a href="">
+                                    <img src="./img/Review/image_name_20191123231367732.jpg" alt="" width="250px">
+                                </a>
+                            </div>
+                            <div class="review_con">
+                                <a href="">
+                                    <p>제목이 길면 과연 ... 으로 표현이 될까요 ??????????????????????</p>
+                                    <p>작성자작성자작성자작성자작성자작성자작성자작성자작성자작성자작성자작성자작성자작성자작성자작성자작성자</p>
+                                    <p>부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목부제목</p>
+                                    <p>내용이 참 많이 길어 질수록 아래로 내려가야 하는데 잘 내려갈까요 정말 무섭다 잘내려가네내용이 참 많이 길어 질수록 아래로 내려가야 하는데 잘
+                                        내려갈까요 정말 무섭다 잘내려가네내용이 참 많이 길어 질수록 아래로 내려가야 하는데 잘 내려갈까요 정말 무섭다 잘내려가네</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="review_img">
+                                <a href="">
+                                    <img src="./img/Review/image_name_20191124234256433.jpeg" alt="" width="250px">
+                                </a>
+                            </div>
+                            <div class="review_con">
+                                <a href="">
+                                    <p>제목</p>
+                                    <p>작성자</p>
+                                    <p>부제목</p>
+                                    <p>내용</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qr_notice">
+                <div class="qr_wrap">
+                    <div class="qr_img"><img src="https://placehold.it/210x160/333" alt=""></div>
+                    <div class="qr_csnum">
+                        <span class="qr_mainTIt">
+                            <p>온라인 쇼핑문의</p>
+                        </span>
+                        <span class="qr_num">
+                            <p>080-080-0000</p>
+                        </span>
+                        <span class="qr_mainTIt">
+                            <p>매장구매 관련문의</p>
+                        </span>
+                        <span class="qr_num">
+                            <p>080-080-0000</p>
+                        </span>
+                    </div>
+                    <div class="qr_list">
+                        <ul>
+                            <li class="qr_item">
+                                <span class="qr_text">
+                                    자주 묻는 질문
+                                </span>
+                                <span class="qr_uni">
+                                    >
+                                </span>
+                            </li>
+                            <li class="qr_item">
+                                <span class="qr_text">
+                                    1:1 문의
+                                </span>
+                                <span class="qr_uni">
+                                    >
+                                </span>
+                            </li>
+                            <li class="qr_item">
+                                <span class="qr_text">
+                                    대량구매(특판)문의
+                                </span>
+                                <span class="qr_uni">
+                                    >
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_borad">
+                    <div class="notice">
+                        <div class="notice_tit">
+                            <p>공지 제목입니다.</p>
+                        </div>
+                        <ul class="notice_con">
+                            <li><a href="">notice_list_1</a></li>
+                            <li><a href="">notice_list_2</a></li>
+                            <li><a href="">notice_list_3</a></li>
+                            <li><a href="">notice_list_4</a></li>
+                            <li><a href="">notice_list_5</a></li>
+                        </ul>
+                    </div>
+                    <div class="brand">
+                        <div class="brand_tit">
+                            <p>브랜드 제목입니다.</p>
+                        </div>
+                        <ul class="brand_con">
+                            <li><a href="">brand_list_1</a></li>
+                            <li><a href="">brand_list_2</a></li>
+                            <li><a href="">brand_list_3</a></li>
+                            <li><a href="">brand_list_4</a></li>
+                            <li><a href="">brand_list_5</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <div class="clear"></div>
+    <footer class="ft">
+        <div class="ft_top_wrap">
+            <nav class="ftp">
+                <div class="ftp_1">
+                    <ul>
+                        <li class="ftp_1_a_first"><a href="">list_1</a></li>
+                        <li><a href="">list_2</a></li>
+                        <li><a href="">list_3</a></li>
+                        <li><a href="">list_4</a></li>
+                        <li><a href="">list_5</a></li>
+                        <li><a href="">list_6</a></li>
+                        <li><a href="">list_7</a></li>
+                        <li class="ftp_1_a_last"><a href="">list_8</a></li>
+                    </ul>
+                </div>
+                <div class="ftp_2">
+                    <ul>
+                        <li><a href=""><i class="xi-facebook-official"></i></a></li>
+                        <li><a href=""><i class="xi-instagram"></i></a></li>
+                        <li><a href=""><i class="xi-youtube-play"></i></a></li>
+                    </ul>
+
+                </div>
+            </nav>
+        </div>
+        <div class="ft_bot_wrap">
+            <div class="ft_logo">
+                <ul class="ft_list">
+                    <li></li>
+                    <li>
+                        <span>
+                            <p>사업자 등록번호 : 113-81-17562</p>
+                            <p>통신판매업신고 번호 : 제2011-서울종로-1012호</p>
+                            <p>주소 : 서울특별시 종로구 새문안로 58, 1층(신문로2가)</p>
+                            <p>대표이사 : 이재선</p>
+                            <p>개인정보 보호책임자 : 이재선</p>
+                            <p>온라인 홈페이지 관련문의 : 080-855-1600</p>
+                            <p>오프라인(매장) 관련 문의 : 080-050-3300</p>
+                            <p class="copyright">COPYRIGHTS©2015 ㈜더페이스샵 ALL RIGHT RESERVED.</p>
+                        </span>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main_slide.js"></script>
+</body>
+
+</html>

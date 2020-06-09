@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/web1/css/reset.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body,
+        html {
+            width: 100%;
+        }
+
+        .hd,
+        .con {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hd {
+            height: 50px;
+        }
+
+        .headTit {
+            font-size: 22px;
+        }
+
+        ul,
+        li {
+            list-style: none;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .gnb {
+            margin-top: 100px;
+        }
+
+        .gnb .gnb_menu {
+            width: 240px;
+            display: block;
+            float: left;
+        }
+
+        .gnb_menu {
+            position: relative;
+        }
+
+        .sgnb_menu {
+            display: block;
+            position: absolute;
+        }
+
+        .gnb .gnb_menu .headTit {
+            display: block;
+            width: 240px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-top: 1px solid black;
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+
+        .gnb .gnb_menu:last-child .headTit {
+            border-right: 1px solid black;
+        }
+
+        .gnb .gnb_menu:hover .headTit {
+            background-color: black;
+            color: white;
+        }
+
+        .sgnb li {
+            display: block;
+            height: 50px;
+            background-color: white;
+        }
+
+        .sgnb li a {
+            font-size: 20px;
+            width: 240px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            display: block;
+        }
+
+        .sgnb .sgnb_menu li a {
+            border-left: 1px solid black;
+            border-bottom: 1px solid black;
+            border-right: 1px solid black;
+        }
+
+        .sgnb .sgnb_menu li a:hover {
+            background-color: teal;
+            color: white;
+        }
+
+        .sgnb .clear {
+            clear: both;
+        }
+
+        .con {
+            display: block;
+        }
+
+        .sgnb {
+            display: none;
+        }
+
+        .gnb_menu:hover a~.sgnb {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hd">
+        <nav class="gnb">
+            <li class="gnb_menu">
+                <a class="headTit" href="">메인메뉴1</a>
+                <nav class="sgnb">
+                    <ul class="sgnb_menu">
+                        <li><a href="">서브메뉴1</a></li>
+                        <li><a href="">서브메뉴2</a></li>
+                        <li><a href="">서브메뉴3</a></li>
+                        <li><a href="">서브메뉴4</a></li>
+                        <li><a href="">서브메뉴5</a></li>
+                        <li><a href="">서브메뉴6</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li class="gnb_menu">
+                <a class="headTit" href="">메인메뉴2</a>
+                <nav class="sgnb">
+                    <ul class="sgnb_menu">
+                        <li><a href="">서브메뉴1</a></li>
+                        <li><a href="">서브메뉴2</a></li>
+                        <li><a href="">서브메뉴3</a></li>
+                        <li><a href="">서브메뉴4</a></li>
+                        <li><a href="">서브메뉴5</a></li>
+                        <li><a href="">서브메뉴6</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li class="gnb_menu">
+                <a class="headTit" href="">메인메뉴3</a>
+                <nav class="sgnb">
+                    <ul class="sgnb_menu">
+                        <li><a href="">서브메뉴1</a></li>
+                        <li><a href="">서브메뉴2</a></li>
+                        <li><a href="">서브메뉴3</a></li>
+                        <li><a href="">서브메뉴4</a></li>
+                        <li><a href="">서브메뉴5</a></li>
+                        <li><a href="">서브메뉴6</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li class="gnb_menu">
+                <a class="headTit" href="">메인메뉴4</a>
+                <nav class="sgnb">
+                    <ul class="sgnb_menu">
+                        <li><a href="">서브메뉴1</a></li>
+                        <li><a href="">서브메뉴2</a></li>
+                        <li><a href="">서브메뉴3</a></li>
+                        <li><a href="">서브메뉴4</a></li>
+                        <li><a href="">서브메뉴5</a></li>
+                        <li><a href="">서브메뉴6</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li class="gnb_menu">
+                <a class="headTit" href="">메인메뉴5</a>
+                <nav class="sgnb">
+                    <ul class="sgnb_menu">
+                        <li><a href="">서브메뉴1</a></li>
+                        <li><a href="">서브메뉴2</a></li>
+                        <li><a href="">서브메뉴3</a></li>
+                        <li><a href="">서브메뉴4</a></li>
+                        <li><a href="">서브메뉴5</a></li>
+                        <li><a href="">서브메뉴6</a></li>
+                    </ul>
+                </nav>
+            </li>
+        </nav>
+    </header>
+    <div class="clear"></div>
+    <main class="con">
+        <img src="https://placehold.it/1200x500/2c8" alt="">
+    </main>
+</body>
+
+</html>
