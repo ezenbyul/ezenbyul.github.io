@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+ .loginWrap {
+            width: 1280px;
+            height: 400px;
+            margin: 20px auto;
+        }
+
+        .loginBot {
+            width: 1280px;
+            height: 400px;
+            margin: 0 auto;
+            background-color: #F6F6F6;
+            position: fixed;
+            z-index: 9999;
+        }
+
+        .flogin {
+            position: absolute;
+            top: 30%;
+            left: 30%;
+        }
+
+        .flogin ul {
+            text-align: center;
+        }
+
+        .flogin label {
+            display: inline-block;
+            text-align: left;
+            width: 85px;
+        }
+
+        .flogin li {
+            padding: 0 37px 14px 24px;
+        }
+
+        .loginbox {
+            border: 1px solid #d5d5d5;
+            width: 208px;
+            height: 24px;
+            padding: 5px 0 4px 3px;
+        }
+
+        .board_button {
+            position: absolute;
+            margin: 0;
+            right: -20%;
+            top: 13%;
+            width: 91px;
+        }
+
+        .board_button button {
+            background: #2a3ea7;
+            border-color: #2a3ea7;
+            height: 80px;
+            padding: 0;
+            width: 110px;
+            font-size: 1.1em;
+            display: inline-block;
+            color: #fff;
+            font-weight: normal;
+            vertical-align: middle;
+            border: 1px solid #1472ca;
+            cursor: pointer;
+        }
+
+        .help {
+            position: absolute;
+            bottom: 15%;
+            left: 30%;
+        }
+
+        .help p {
+            width: 450px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .help p span {
+            width: 150px;
+            height: 32px;
+            display: block;
+            float: right;
+            background-color: #000;
+        }
+
+        .help p span a {
+            height: 34px;
+            line-height: 34px;
+            display: block;
+            text-align: center;
+            color: #fff;
+        }

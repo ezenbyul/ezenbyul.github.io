@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login_pop.css">
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <div class="loginWrap">
+        <div class="loginBot">
+            <form method="POST" autocomplete="off" class="flogin" name="flogin_pop">
+                <ul>
+                    <li>
+                        <label for="login_mb_id">아이디</label>
+                        <input id="login_mb_id" class="loginbox" type="text" minlength="2" maxlength="15">
+                    </li>
+                    <li>
+                        <label for="login_mb_pw">패스워드</label>
+                        <input id="login_mb_pw" class="loginbox" type="password" minlength="2" maxlength="20">
+                    </li>
+                </ul>
+                <div class="board_button"><button type="submit" class="btn" id="btn_submit">로그인</button>
+                </div>
+            </form>
+            <div class="clear"></div>
+            <div class="help">
+                <p>
+                    · 아이디, 비밀번호를 잊으셨나요?
+                    <span><a href="">회원정보찾기</a></span></p>
+                <p>
+                    · 회원가입을 하시려면 클릭하세요.
+                    <span><a href="join.html">가입하기</a></span></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
