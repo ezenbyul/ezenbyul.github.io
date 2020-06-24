@@ -1,0 +1,17 @@
+package Class;
+
+public class Account {
+	static final int MIN_BALANCE = 0;
+	static final int MAX_BALANCE = 1000000;
+	private int balance;
+	
+	
+	void setBalance(int a){
+		if(a>MIN_BALANCE && a<MAX_BALANCE) {
+			balance = a;
+		}		
+	}
+	int getBalance(){
+		return balance;
+	}
+}

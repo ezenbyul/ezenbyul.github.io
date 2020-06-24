@@ -1,0 +1,13 @@
+package Method;
+
+public class Printer {
+	int inttext;
+	boolean booltext;
+	double doutext;
+	String Strtext;
+	public int Printerln(int a) {return a;}
+	public boolean Printerln(boolean a) {return a;}
+	public double Printerln(double a) {return a;}
+	public String Printerln(String a) {return a;}
+	
+}

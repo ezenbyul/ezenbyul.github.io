@@ -1,0 +1,16 @@
+package ex6;
+
+public class Car {
+	String company;
+	String model;
+	String color;
+	int maxSpeed;
+	int Speed;
+	void Car(String company) {
+		String company = company;
+		String model = "none";
+		String color = "none";
+		int maxSpeed = 0;
+		int Speed = 0;	
+	}
+}

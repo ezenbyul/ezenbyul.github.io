@@ -1,0 +1,41 @@
+package ex7;
+
+public class HandPhone extends Phone{
+	public static final int TRAFFIC = 720;
+	public static final int SMS = 100;
+	// 멤버변수와 멤버메서드는 상속되지만 
+	// 생성자는 상속되지 않음
+	HandPhone(){
+		super();	// super: 부모 클래스에서 Phone()의 생성자를 호출
+//		this("S10", "블랙", 200); // 자기자신의 생성자를 호출
+	}	
+	public HandPhone(String model) {
+		super(model);
+	}
+	public HandPhone(String model, String color) {
+		super(model,color);
+	}
+	public HandPhone(String model, String color, int useTime) {
+		super(model,color,useTime);
+//		super.model;	//부모 클래스에서 멤버 변수(필드)를 호출
+//		super.color;
+//		super.useTime;
+	}
+}
+//
+//	HandPhone(){
+//		this("S10", "블랙", 200);
+//	}	
+//	public HandPhone(String model) {
+//		this(model,"블랙",200);
+//	}
+//	public HandPhone(String model, String color) {
+//		this(model,color,200);
+//	}
+//	public HandPhone(String model, String color, int useTime) {
+//		this(model,color,useTime);
+//		super.model;	
+//		super.color;
+//		super.useTime;
+//	}
+

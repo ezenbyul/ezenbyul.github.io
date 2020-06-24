@@ -1,0 +1,17 @@
+package ex7;
+
+public class HandPhone extends Phone{
+	// 생성자는 상속되지 않음
+	HandPhone(){
+		super();
+	}	
+	public HandPhone(String model) {
+		super(model);
+	}
+	public HandPhone(String model, String color) {
+		super(model,color);
+	}
+	public HandPhone(String model, String color, int useTime) {
+		super(model,color,useTime);
+	}
+}

@@ -1,0 +1,13 @@
+package Class;
+
+public class Printer {	
+	void printerln2(int a){System.out.println(a);}
+	void printerln2(String a){System.out.println(a);}
+	void printerln2(double a){System.out.println(a);}
+	void printerln2(boolean a){System.out.println(a);}
+
+	int printerln(int a){System.out.println(a);return a;}
+	String printerln(String a){System.out.println(a);return a;}
+	double printerln(double a){System.out.println(a);return a;}
+	boolean printerln(boolean a){System.out.println(a);return a;}
+}

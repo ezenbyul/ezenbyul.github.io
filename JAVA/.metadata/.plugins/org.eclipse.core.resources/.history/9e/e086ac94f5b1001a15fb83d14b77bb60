@@ -1,0 +1,36 @@
+package ex6;
+
+public class StudentEx1 {
+	public static void main(String[] args) {
+		//ê°ì²´(?¸?Š¤?„´?Š¤) ?ƒ?„±
+		Student st1 = new Student(); 
+		st1.name = "?œ¤?¬?„­";
+		st1.design = 80;
+		st1.ui = 90;
+		st1.sw = 40;
+		st1.pg = 85;
+		st1.getTot();
+		System.out.println("ì´ì  : "+st1.tot);
+		System.out.println("?‰ê·? : "+st1.getAvg());
+		Student st2 = new Student("ìµœë?¼ì„");
+		Student st3 = new Student("ë°•ì„±?š©", 100);
+		Student st4 = new Student("ë°•ìƒë¯?", 90, 80);
+		Student st5 = new Student("ë°±ìœ ?•ˆ", 100, 90, 95);
+		Student st6 = new Student("ê¹?ë³‘ì„", 85, 70, 100, 95);
+		st2.getTot();
+		st3.getTot();
+		st4.getTot();
+		st5.getTot();
+		st6.getTot();
+		System.out.println("ì´ì  : "+st2.tot);
+		System.out.println("?‰ê·? : "+st2.getAvg());
+		System.out.println("ì´ì  : "+st3.tot);
+		System.out.println("?‰ê·? : "+st3.getAvg());
+		System.out.println("ì´ì  : "+st4.tot);
+		System.out.println("?‰ê·? : "+st4.getAvg());
+		System.out.println("ì´ì  : "+st5.tot);
+		System.out.println("?‰ê·? : "+st5.getAvg());
+		System.out.println("ì´ì  : "+st6.tot);
+		System.out.println("?‰ê·? : "+st6.getAvg());
+	}
+}

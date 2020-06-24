@@ -1,0 +1,16 @@
+package Method;
+
+public class MemberService {
+	boolean login(String id,String pwd) {
+		boolean ret = false;
+		if(id == "hong") {
+			if(pwd == "12345") {
+				ret = true;
+				return ret;
+			}
+		}else{
+			return ret;
+		}
+	}
+	
+}

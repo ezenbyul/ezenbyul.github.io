@@ -1,0 +1,23 @@
+package ex6;
+
+public class Car {
+	String company;
+	String model;
+	String color;
+	int maxSpeed;
+	int speed;
+	public Car() {
+		this.company = "none";
+		this.model = "none";
+		this.color = "none";
+		this.maxSpeed = 0;
+		this.Speed = 0;	
+	}
+	public Car(String company) {
+		this.company = company;
+		this.model = "none";
+		this.color = "none";
+		this.maxSpeed = 0;
+		this.Speed = 0;	
+	}
+}

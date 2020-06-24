@@ -1,0 +1,16 @@
+package ex5;
+
+public class re02 {
+
+	public static void main(String[] args) {
+		//배열 선언
+		int[] num1;
+		int num2[];
+		int[] num3 = null;	//참조 변수는 null값으로 초기화 가능
+		int[] ex1 = { 80,90,'a','b',100}; // print = 80 , 90 , 97 , 98 , 100 ASCII CODE
+		ex[4] = 85;
+		ex[5] = 500;
+				
+	}
+
+}

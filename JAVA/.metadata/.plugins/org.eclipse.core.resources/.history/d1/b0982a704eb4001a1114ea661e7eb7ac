@@ -1,0 +1,74 @@
+package ex6;
+
+public class CarEx1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car car1 = new Car();
+		car1.company = "BMW";
+		car1.model = "BMW";
+		car1.color = "White";
+		car1.maxSpeed = 400;
+		car1.speed = 200;
+		System.out.print(car1.company+ " ");
+		System.out.print(car1.model+ " ");
+		System.out.print(car1.color+ " ");
+		System.out.print(car1.maxSpeed+ " ");
+		System.out.println(car1.speed+ " ");
+		
+		Car car2 = new Car("현대자동차");
+		System.out.print(car2.company+ " ");
+		System.out.print(car2.model+ " ");
+		System.out.print(car2.color+ " ");
+		System.out.print(car2.maxSpeed+ " ");
+		System.out.println(car2.speed+ " ");
+		
+		Car car3 = new Car("현대자동차","산타페");
+		System.out.print(car3.company+ " ");
+		System.out.print(car3.model+ " ");
+		System.out.print(car3.color+ " ");
+		System.out.print(car3.maxSpeed+ " ");
+		System.out.println(car3.speed+ " ");
+		
+		Car car4 = new Car("현대자동차","산타페","검정");
+		System.out.print(car4.company+ " ");
+		System.out.print(car4.model+ " ");
+		System.out.print(car4.color+ " ");
+		System.out.print(car4.maxSpeed+ " ");
+		System.out.println(car4.speed+ " ");
+		
+		Car car5 = new Car("현대자동차","산타페","검정",260);
+		System.out.print(car5.company+ " ");
+		System.out.print(car5.model+ " ");
+		System.out.print(car5.color+ " ");
+		System.out.print(car5.maxSpeed+ " ");
+		System.out.println(car5.speed+ " ");
+		
+		Car car6 = new Car("현대자동차","산타페","검정",260,120);
+		System.out.print(car6.company+ " ");
+		System.out.print(car6.model+ " ");
+		System.out.print(car6.color+ " ");
+		System.out.print(car6.maxSpeed+ " ");
+		System.out.println(car6.speed+ " ");
+		
+		Car2 hcar1 = new Car2();
+		hcar1.setCompany("페라리");
+		hcar1.getCompany();
+		hcar1.setPowerOn();
+//		System.out.println(hcar1.speed);
+		hcar1.setPowerDown();
+//		System.out.println(hcar1.maxSpeed);
+		hcar1.setSpeedUp();
+		System.out.println(hcar1.speed);
+		hcar1.setSpeedUp(50);
+		System.out.println(hcar1.speed);
+		hcar1.setSpeedDown();
+		System.out.println(hcar1.speed);
+		hcar1.setSpeedDown(50);
+		System.out.println(hcar1.speed);
+		
+		Car2 kcar2 = new Car2();
+		kcar2.speed=100;
+		kcar2.speed = Car3.speedUp(50);
+	}
+}

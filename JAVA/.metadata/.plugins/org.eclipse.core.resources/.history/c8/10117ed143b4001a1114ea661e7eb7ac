@@ -1,0 +1,22 @@
+package ex6;
+
+public class Car2 {
+	String company;
+	String model;
+	String color;
+	int maxSpeed;
+	int speed;
+	Car2()
+	{ this("BMW","X6 M","Black",400,200);}
+	Car2(String company)
+	{ this(company,"X6 M","Black",400,200);}
+	Car2(String company , String model)
+	{ this(company,model,"Black",400,200);}
+	Car2(String company , String model , String color)
+	{ this(company,model,color,400,200);}
+	Car2(String company , String model , String color , int maxSpeed)
+	{ this(company,model,color,maxSpeed,200);}
+	Car2(String company , String model , String color , int maxSpeed , int speed)
+	{ this(company,model,color,maxSpeed,speed);}
+
+}

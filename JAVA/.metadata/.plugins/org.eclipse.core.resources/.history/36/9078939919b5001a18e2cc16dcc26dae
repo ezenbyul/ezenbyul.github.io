@@ -1,0 +1,10 @@
+package Method;
+
+public class PrinterEx2 {
+	public static void main(String[] args) {
+		printer.Printerln(10);
+		printer.Printerln(true);
+		printer.Printerln(5.7);
+		printer.Printerln("¹Ùº¸");
+	}
+}

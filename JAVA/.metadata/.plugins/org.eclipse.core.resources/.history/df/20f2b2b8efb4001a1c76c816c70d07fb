@@ -1,0 +1,8 @@
+package com.ezen.student;
+//import com.ezen.studentpg.*;
+public class StudnetPackage {
+
+	public static void main (String agrs) {
+		
+	}
+}

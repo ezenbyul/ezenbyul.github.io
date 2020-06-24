@@ -1,0 +1,23 @@
+package ex5;
+
+public class Test {
+
+	public static void main(String[] args) {
+		int max = 0;
+		int min = 0 ;
+		int[] arr = {1,5,3,8,2};
+
+		for(int i = 0 ; i<arr.length;i++) {
+			for ( int y = 0 ; y < arr.length ; y++) {
+				if(arr[i]<arr[y]) {
+					max = arr[y];
+					System.out.println(max+" "+arr[i]);
+				}else if (arr[i]>arr[y]) {
+					min = arr[y];
+				}
+			
+			}
+		}
+	}
+
+}

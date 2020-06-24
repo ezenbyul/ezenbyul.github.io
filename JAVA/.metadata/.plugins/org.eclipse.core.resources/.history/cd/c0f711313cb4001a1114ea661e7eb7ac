@@ -1,0 +1,23 @@
+package ex6;
+
+public class CarEx1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Car car1 = new Car();
+//		car1.company = "현대자동차";
+		System.out.print(car1.company+ " ");
+		System.out.print(car1.model+ " ");
+		System.out.print(car1.color+ " ");
+		System.out.print(car1.maxSpeed+ " ");
+		System.out.print(car1.speed+ " ");
+		System.out.println();
+		Car car2 = new Car("현대자동차");
+		System.out.print(car2.company+ " ");
+		System.out.print(car2.model+ " ");
+		System.out.print(car2.color+ " ");
+		System.out.print(car2.maxSpeed+ " ");
+		System.out.print(car2.speed+ " ");
+	}
+
+}

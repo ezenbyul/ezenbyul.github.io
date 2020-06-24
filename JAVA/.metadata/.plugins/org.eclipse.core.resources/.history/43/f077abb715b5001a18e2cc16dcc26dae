@@ -1,0 +1,11 @@
+package Method;
+
+public class Memberex {
+
+	public static void main(String[] args) {
+		Member user1 = new Member("¾ÆÀú¾¾","man");
+		Member user2 = new Member("¾ÆÁÜ¸¶","woman");
+		System.out.println(user1);
+		System.out.println(user2);
+	}
+}

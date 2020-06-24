@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ex2.Literal&apos; to &apos;Literal1&apos;&#x0D;&#x0A;- Original project: &apos;ex2&apos;&#x0D;&#x0A;- Original element: &apos;ex2.Literal&apos;&#x0D;&#x0A;- Renamed element: &apos;ex2.Literal1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Literal&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ex2{Literal.java[Literal" matchStrategy="1" name="Literal1" qualified="false" references="true" similarDeclarations="false" stamp="1588312029136" textual="false" version="1.0"/>
+</session>

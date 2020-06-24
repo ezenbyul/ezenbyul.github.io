@@ -1,0 +1,18 @@
+package ex5;
+
+public class re01 {
+
+	public static void main(String[] args) {
+		int age1 = 32,age2 = 10,age3 = 10, age4;
+		double price1 = 3000,price2,price3;
+		
+		String name1="±Ë±‚≈¬";
+		String name2 ="±Ë", name3 ="±Ë", name4;
+		
+		if(age2==age3) {System.out.println("age2=age3");}
+		if(name2==name3) {System.out.println("name=name3");}
+		
+		//∞¥√º≈∏¿‘ ¿ŒΩ∫≈œ∆Æ∏Ì
+	}
+
+}

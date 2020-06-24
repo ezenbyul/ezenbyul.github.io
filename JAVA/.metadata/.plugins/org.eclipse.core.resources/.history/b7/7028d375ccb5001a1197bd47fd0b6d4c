@@ -1,0 +1,16 @@
+package ex7;
+
+public class PhoneEx1 {
+
+	public static void main(String[] args) {
+		Phone ph1 = new Phone("S1","네이비",300);
+		HandPhone hp1 = new HandPhone("S10","실버",300,300,300);
+		System.out.println(ph1);
+		System.out.println(hp1);
+		System.out.println(ph1.color);
+		ph1.feeCalc();
+		ph1.getFee();
+		hp1.feeCalc();
+		hp1.getFee2();
+	}
+}

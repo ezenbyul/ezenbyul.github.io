@@ -1,0 +1,7 @@
+package Method;
+
+public class Memberex {
+	Member user1 = new Member("¾ÆÀú¾¾","man");
+	Member user2 = new Member("¾ÆÁÜ¸¶","woman");
+	
+}

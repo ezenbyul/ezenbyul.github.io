@@ -1,0 +1,24 @@
+package ex5;
+
+public class re01 {
+
+	public static void main(String[] args) {
+		int age1 = 32,age2 = 10,age3 = 10, age4;
+		double price1 = 3000,price2,price3;
+		
+		String name1="김기태";
+		String name2 ="김", name3 ="김", name4="기";
+		
+		if(age2==age3) {System.out.println("age2=age3");}
+		if(name2==name3) {System.out.println("name2=name3");}
+		if(name2==name3) {System.out.println("name2=name4");}
+		
+		//객체타입 인스턴트명 = new 객체생성자함수()
+		String n1 = new String("김기태");
+		String n2 = new String("김기태");
+		
+		if(n1==n2) {System.out.println("서로 같다.");}
+		if(n1!=n2) {System.out.println("서로 같지 않다.");}
+	}
+
+}

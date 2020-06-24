@@ -1,0 +1,12 @@
+package Method;
+
+public class Printer {
+	int inttext;
+	boolean booltext;
+	double doutext;
+	String Strtext;
+	
+	void Printer(int a,boolean b,double d,String s){
+		return; 
+	}
+}

@@ -1,0 +1,13 @@
+package com.ezen.student;
+//import com.ezen.studentpg.*;
+public class StudnetPackage {
+
+	public static void main (String agrs) {
+		// 1. 라이브러리 - jar를 생성
+		// 2-1. import com.ezen.studentpg.*; 를 호출
+		// 2-2. com.ezen.studentpg.Student st1 = new com.ezen.studentpg.Student() 형식으로 직접 호출
+		// [Package Explorer]에서 해당 프로젝트를 선택
+		// 우클릭 -> [Export] -> [JAVA - > JAR File] 선택 후
+		// 패키지 이름과 동일하게 jar 파일명을 입력 & 경로 선택후 JAR File 생성
+	}
+}

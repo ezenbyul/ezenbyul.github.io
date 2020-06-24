@@ -1,0 +1,14 @@
+package ex6;
+
+public class Car3 {
+	static String Company = "현대";
+	static int speed = 0;
+	static int speedUp(int x) {
+		System.out.println("속도가 증가 되었습니다.");
+		return speed = speed+x;
+	}
+	static int speedDown(int x) {
+		System.out.println("속도가 감소 하였습니다.");
+		return speed = speed+x;
+	}
+}

@@ -1,0 +1,17 @@
+package com.ezen.studentpg;
+
+public class Student {
+	String name;
+	int	kor;
+	int eng;
+	int mat;
+	int ger;
+	
+	public void setKor(int kor){
+		this.kor=kor;
+		
+	}
+	public int getKor() {
+		return this.kor;
+	}
+}

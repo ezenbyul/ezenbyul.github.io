@@ -1,0 +1,24 @@
+package Method;
+
+public class MemberServiceEx {
+
+	public static void main(String[] args) {
+		MemberService memverService = new MemberService();
+		boolean result = memverService.login("hong", "12345");
+		if(result) {
+			System.out.println("로그인 되었습니다.");
+			memverService.logout("hong");
+		} else {
+			System.out.println("id 또는 pwd가 올바르지 않습니다.");
+		}
+		
+		MemberService memverService2 = new MemberService();
+		boolean result2 = memverService.login("hong", "1235");
+		if(result) {
+			System.out.println("로그인 되었습니다.");
+			memverService.logout("hong");
+		} else {
+			System.out.println("id 또는 pwd가 올바르지 않습니다.");
+		}
+	}
+}

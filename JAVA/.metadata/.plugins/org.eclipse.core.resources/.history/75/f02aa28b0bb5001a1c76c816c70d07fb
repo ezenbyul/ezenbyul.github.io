@@ -1,0 +1,11 @@
+package com.ezen.student.test;
+
+import static java.lang.annotation.ElementType.METHOD;
+import static java.lang.annotation.RetentionPolicy.RUNTIME;
+
+@Target({ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface PrintAnnotation {
+	String value() default "-";
+	int number() default 15;
+}

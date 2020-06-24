@@ -1,0 +1,15 @@
+package Class;
+
+public class PrinterExample {
+	public static void main(String[] args) {
+		Printer printer = new Printer();
+		printer.printerln(10);
+		printer.printerln(false);
+		printer.printerln("String");
+		printer.printerln(5.6);
+		printer.printerln2(10);
+		printer.printerln2(false);
+		printer.printerln2("String");
+		printer.printerln2(5.6);	
+	}
+}

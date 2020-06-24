@@ -1,0 +1,28 @@
+package ex7;
+
+public class Phone {
+	public static final int VOICE_CALL = 300; 
+	String model;
+	String color;
+	int useTime;
+	long fee;
+	
+	
+	Phone(){
+		this("S2","Black",0);
+	}	
+	public Phone(String model) {
+		this(model,"Black",0);
+		}
+	public Phone(String model, String color) {
+	this(model,color,0);
+	}
+	public Phone(String model, String color, int useTime) {
+		super();
+		this.model = model;
+		this.color = color;
+		this.useTime = useTime;
+	}
+	
+	
+}

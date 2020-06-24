@@ -1,0 +1,60 @@
+package ex6;
+
+public class Car2 {
+	String company;
+	String model;
+	String color;
+	int maxSpeed;
+	int speed;
+	Car2(){
+		this("BMW","X6 M","Black",400,200);}
+	Car2(String company){
+		this(company,"X6 M","Black",400,200);}
+	Car2(String company , String model){
+		this(company,model,"Black",400,200);}
+	Car2(String company , String model , String color){
+		this(company,model,color,400,200);}
+	Car2(String company , String model , String color , int maxSpeed){
+		this(company,model,color,maxSpeed,200);}
+	
+	// 모두 this를 이용하여 실행 
+	// 상단에 있는 this를 이용하여 오버로딩 한 것들을 호출하여 사용한다.
+	Car2(String company , String model , String color , int maxSpeed , int speed){
+		this.company=company;
+		this.model=model;
+		this.color=color;
+		this.maxSpeed=maxSpeed;
+		this.speed=speed;
+		}
+	public void setCompany(String company) {
+		System.out.print("변경전 Company : "+this.company);
+		this.company=company;
+		System.out.println("         변경후 Company : "+this.company);
+	}
+	public void getCompany() {
+		System.out.println("적용된 Company : "+this.company);
+	}
+	public void setPowerOn() {
+		this.speed=0;
+		System.out.println("시동이 걸렸습니다."+this.speed);
+			}
+	public void setPowerDown() {
+		this.maxSpeed=0;
+		System.out.println("시동이 꺼졌습니다."+this.maxSpeed);
+	}
+	public int setSpeedUp() {
+		return this.speed++;
+	}
+	public int setSpeedUp(int speed) {
+		this.speed+=speed;
+		return this.speed;
+	}
+	public int setSpeedDown() {
+		return this.speed--;
+	}
+	public int setSpeedDown(int speed) {
+		this.speed-=speed;
+		return this.speed;
+	}
+	
+}

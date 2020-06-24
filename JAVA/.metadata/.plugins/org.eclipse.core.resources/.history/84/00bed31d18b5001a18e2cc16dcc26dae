@@ -1,0 +1,23 @@
+package Method;
+
+public class Memberex {
+
+	public static void main(String[] args) {
+		Member user1 = new Member("아저씨","man");
+		Member user2 = new Member("아줌마","woman");
+		System.out.println(user1.name);
+		System.out.println(user1.id);
+		System.out.println(user2.name);
+		System.out.println(user2.id);
+		
+		MemberService memverService = new MemberService();
+		boolean result = memverService.login("hong", "12345");
+		if(result) {
+			System.out.println("로그인 되었습니다.");
+			memverService.logout("hong");
+		} else {
+			System.out.println("id 또는 pwd가 올바르지 않습니다.");
+		}
+		
+	}
+}

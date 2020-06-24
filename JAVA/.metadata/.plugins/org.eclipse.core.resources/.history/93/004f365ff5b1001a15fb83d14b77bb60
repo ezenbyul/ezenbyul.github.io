@@ -1,0 +1,61 @@
+package ex6;
+
+public class Student {
+	String name;
+	int design;
+	int ui;
+	int sw;
+	int pg;
+	int tot;
+	public void getTot() {
+		tot = design + ui + sw + pg;
+	}
+	public double getAvg() {
+		this.getTot();
+		return (double)tot/4;
+	}
+	public Student() {
+		this.name="¾Æ¹«°³";
+		this.design=0;
+		this.ui=0;
+		this.sw=0;
+		this.pg=0;
+	}
+	public Student(String sname) {
+		this.name=sname;
+		this.design=0;
+		this.ui=0;
+		this.sw=0;
+		this.pg=0;
+	}
+	public Student(String sname,int sdesign) {
+		this.name=sname;
+		this.design=design;
+		this.ui=0;
+		this.sw=0;
+		this.pg=0;
+	}
+	public Student(String sname,int sdesign , int sui) {
+		this.name=sname;
+		this.design=sdesign;
+		this.ui=sui;
+		this.sw=0;
+		this.pg=0;
+	}
+	public Student(String sname,int sdesign , int sui, int ssw) {
+		this.name=sname;
+		this.design=sdesign;
+		this.ui=sui;
+		this.sw=ssw;
+		this.pg=0;
+	}
+	public Student(String sname,int sdesign , int sui, int ssw , int spg) {
+		this.name=sname;
+		this.design=sdesign;
+		this.ui=sui;
+		this.sw=ssw;
+		this.pg=spg;
+	}
+	
+	
+}

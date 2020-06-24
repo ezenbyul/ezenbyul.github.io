@@ -1,0 +1,5 @@
+package ex5;
+
+
+public enum WEEK{SUNDAY, MONDAY , TUESDAY , WEDNESDAY , THURSDAY ,FRIDAY, SATURDAY}
+

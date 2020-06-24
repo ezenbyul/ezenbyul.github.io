@@ -1,0 +1,5 @@
+package com.ezen.student.test;
+
+public @interface An1 {
+
+}

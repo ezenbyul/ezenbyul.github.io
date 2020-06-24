@@ -1,0 +1,16 @@
+package ex5;
+import java.util.Calendar;
+
+public class WeekEnum {
+
+	public static void main(String[] args) {
+		Week today = null; // enum type 의 변수 선언
+		
+		Calendar cal = Calendar.getInstance(); // Calendar 타입의 cal 인스턴스 생성
+		int week = cal.get(Calendar.DAY_OF_WEEK);
+		System.out.println(week);
+		
+
+	}
+
+}
