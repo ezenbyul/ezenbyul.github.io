@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+* { margin:0; padding:0; }
+body, html { width:100%; height:100%; }
+ul { list-style:none; }
+a { text-decoration:none; }
+button, label, input { outline:0; border:0; user-select:none; }
+img { border:0; }
+
+.hd { clear:both; min-height:120px; }
+.tit { font-size:48px; text-align:center; line-height:80px; }
+.gnb { clear:both; height:40px; background-color:#4284f5; }
+.gnb li { float:left; width:120px; }
+.gnb a { display:block; text-align:center; line-height:40px; height:40px; 
+	color:#fff; border-left:1px solid #4d8cf7; border-right:1px solid #337bf5; }
+.btn_fr { float:right; margin-right:20px; padding-top:0px; }
+.btn { display:block; border-radius:5px; text-align:center;
+	background-color:deepskyblue; height:32px;   
+	padding:0px 16px; line-height:32px; box-shadow:2px 2px 20px navy; }
+
+.page { clear:both; padding-bottom:30px; padding-top:30px; }	
+.page_tit { text-align:center; font-size:32px; }
+.menu { clear:both; padding-bottom:20px; padding-top:40px;  min-height:400px;  }
+.menu ul { clear:both; width:1200px; margin:0 auto; }
+.menu li { float:left; min-width:150px; }
+.menu li a { display:block; text-align:center; line-height:40px; hieght:px;
+margin:20px 10px; color:#fff; background-color:#333; box-shadow:2px 2px 20px black; 
+border-radius:8px; padding:8px 16px; }
+
+.home { display:block; width:40px; height:40px; line-height:40px;
+	text-align:center; background-color:deeppink; color:#fff; 
+	border-radius:24px; box-shadow:2px 2px 24px #555; 
+	position:fixed; z-index:9999; right:80px; bottom:180px; }
+

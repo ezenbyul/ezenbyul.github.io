@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.ft { clear:both; min-height:120px; background-color:#222; color:#fff; }
+.fnb { clear:both; height:40px; background-color:#4284f5; }
+.fnb li { float:left; min-width:120px; }
+.fnb a { display:block; text-align:center; line-height:40px; height:40px; 
+	color:#fff; border-left:1px solid #4d8cf7;
+	border-right:1px solid #337bf5; font-size:0.85em; }
+.admin_copy { clear:both; }
+.copyright { line-height:1.8; font-size:0.85em; }

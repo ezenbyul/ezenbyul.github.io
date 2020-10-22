@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인창</title>
+<script>
+function fn_valdi() {
+	var login3 = document.login;
+	var id = login3.m_id.value;
+	var pw = login3.m_pw.value;
+	
+	if((id.length == 0 || id=="")) || (pw.length == 0 || pw=="")) {
+		alert("아이디와 비밀번호를 입력하지 말면 어떡합니까?");
+	} else {
+		login3.method = "post";
+		login3.action = "login3";
+		login3.submit();
+	}
+}
+</script>
+</head>
+<body>
+<h3 style="text-align:center; padding-top:60px;">로그인</h3>
+<form name="login" action="login3" method="post" encType="utf-8">
+	<label for="id">아이디</label> : 
+	<input type="text" id="id" name="m_id" /> <br><br>
+	<label for="pw">비밀번호</label> :
+	<input type="password" id="pw" name="m_pw"/><br><br>
+	<input type="submit" value="로그인"/>
+	<input type="button" value="로그인2" onClick="fn_valdi()"/>
+	<input type="reset" value="취소" />
+	<input type="hidden" name="user_info" value="서울시 성북구" />
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
